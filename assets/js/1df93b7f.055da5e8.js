@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkuopensail_github_io=self.webpackChunkuopensail_github_io||[]).push([[4583],{6107:(e,t,i)=>{i.r(t),i.d(t,{default:()=>h});i(6540);var s=i(4848);const h=()=>(0,s.jsx)("iframe",{src:"/cindex.html",style:{width:"100%",height:"100vh",border:"none"},title:"Static HTML Content"})}}]);
