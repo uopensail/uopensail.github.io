@@ -5,6 +5,11 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
+  markdown: {
+    format: 'detect',
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   title: 'RecGo',
   tagline: 'Artificial Intelligence Powered Recommender as a Service',
   favicon: 'img/favicon.ico',
