@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">API 定义 | RecGo</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://www.uopensail.com/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://www.uopensail.com/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://www.uopensail.com/docs/user-documentation/api-reference"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="API 定义 | RecGo"><meta data-rh="true" name="description" content="物料"><meta data-rh="true" property="og:description" content="物料"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://www.uopensail.com/docs/user-documentation/api-reference"><link data-rh="true" rel="alternate" href="https://www.uopensail.com/docs/user-documentation/api-reference" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://www.uopensail.com/docs/user-documentation/api-reference" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="RecGo RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="RecGo Atom Feed"><link rel="stylesheet" href="/assets/css/styles.47bc7137.css">
-<script src="/assets/js/runtime~main.6961c6c3.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.61692da2.js" defer="defer"></script>
 <script src="/assets/js/main.e02d67d0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -16,7 +16,7 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="添加属性">添加属性<a href="#添加属性" class="hash-link" aria-label="添加属性的直接链接" title="添加属性的直接链接">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="api-端点名称">API 端点名称<a href="#api-端点名称" class="hash-link" aria-label="API 端点名称的直接链接" title="API 端点名称的直接链接">​</a></h4>
 <p>Method: PUT</p>
-<p>PATH:  /{databaseId}/items/properties/{propertyName}?type=<string></string></p>
+<p>PATH:  /{project_id}/items/properties/{propertyName}?type=<string></string></p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="参数">参数<a href="#参数" class="hash-link" aria-label="参数的直接链接" title="参数的直接链接">​</a></h4>
 
 
@@ -51,7 +51,7 @@
 
 
 
-<table><thead><tr><th>参数名称</th><th>类型</th><th>位置</th><th>必填</th><th>描述与约束</th></tr></thead><tbody><tr><td><code>databased</code></td><td>string</td><td>path</td><td>Yes</td><td>数据库ID</td></tr><tr><td><code>propertyName</code></td><td>string</td><td>path</td><td>Yes</td><td>要创建的属性名称。<br>满足正则表达式 ^[a-zA-Z0-9][a-zA-Z0-9_-:]*$ <br>⚠️ 保留名称（大小写不敏感）：<code>id</code>, <code>itemid</code>。<br>⛔ 长度限制：不超过63字符。</td></tr><tr><td><code>type</code></td><td>string</td><td>query</td><td>Yes</td><td>属性值类型，可选值：<br><code>int</code>（64位有符号整数）、<br><code>float</code>（单精度浮点）、<br><code>str</code>（UTF-8字符串）、<br><code>list_int</code>（整型数组）、<br><code>list_float</code>（浮点型数组）、<br><code>list_str</code>（字符串数组）</td></tr></tbody></table>
+<table><thead><tr><th>参数名称</th><th>类型</th><th>位置</th><th>必填</th><th>描述与约束</th></tr></thead><tbody><tr><td><code>project_id</code></td><td>string</td><td>path</td><td>Yes</td><td></td></tr><tr><td><code>propertyName</code></td><td>string</td><td>path</td><td>Yes</td><td>要创建的属性名称。<br>满足正则表达式 ^[a-zA-Z0-9][a-zA-Z0-9_-:]*$ <br>⚠️ 保留名称（大小写不敏感）：<code>id</code>, <code>itemid</code>。<br>⛔ 长度限制：不超过63字符。</td></tr><tr><td><code>type</code></td><td>string</td><td>query</td><td>Yes</td><td>属性值类型，可选值：<br><code>int</code>（64位有符号整数）、<br><code>float</code>（单精度浮点）、<br><code>str</code>（UTF-8字符串）、<br><code>list_int</code>（整型数组）、<br><code>list_float</code>（浮点型数组）、<br><code>list_str</code>（字符串数组）</td></tr></tbody></table>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="响应">响应<a href="#响应" class="hash-link" aria-label="响应的直接链接" title="响应的直接链接">​</a></h4>
 
 
@@ -75,7 +75,7 @@
 <p>删除项目属性大致相当于从项目表中删除一列。</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="api-端点名称-1">API 端点名称<a href="#api-端点名称-1" class="hash-link" aria-label="API 端点名称的直接链接" title="API 端点名称的直接链接">​</a></h4>
 <p>Method: DELETE</p>
-<p>PATH:  /{databaseId}/items/properties/{propertyName}</p>
+<p>PATH:  /{project_id}/items/properties/{propertyName}</p>
 
 
 
