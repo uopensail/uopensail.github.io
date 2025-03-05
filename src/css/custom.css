@@ -1,30 +1,53 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* 覆盖默认主色调为科技蓝 */
+  --ifm-color-primary: #2A5CAA;          /* 主蓝 */
+  --ifm-color-primary-dark: #254F91;     /* 深蓝 */
+  --ifm-color-primary-darker: #214780;   /* 更深的蓝 */
+  --ifm-color-primary-darkest: #1A3563;  /* 最暗蓝 */
+  --ifm-color-primary-light: #3169C2;    /* 亮蓝 */
+  --ifm-color-primary-lighter: #3B74D6;  /* 更亮蓝 */
+  --ifm-color-primary-lightest: #4F89EA; /* 最亮蓝 */
+
+  /* 辅助颜色 */
+  --ifm-button-background-color: #10B981; /* 按钮强调绿 */
+  --ifm-link-color: #3B82F6;             /* 链接蓝 */
+
+  /* 背景与文本 */
+  --ifm-background-color: #F8FAFC;       /* 页面背景浅灰 */
+  --ifm-color-content: #1E293B;          /* 正文深灰 */
+  
+  /* 代码块 */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(41, 92, 170, 0.1); /* 使用主蓝透明色 */
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* 暗黑模式适配 */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #3B82F6;          /* 亮科技蓝 */
+  --ifm-color-primary-dark: #3169C2;
+  --ifm-color-primary-darker: #2A5CAA;
+  --ifm-color-primary-darkest: #1A3563;
+  --ifm-color-primary-light: #4F89EA;
+  --ifm-color-primary-lighter: #5D95F0;
+  --ifm-color-primary-lightest: #7CABF5;
+
+  --ifm-button-background-color: #10B981;
+  --ifm-link-color: #4F89EA;
+  
+  --ifm-background-color: #1E293B;       /* 深灰背景 */
+  --ifm-color-content: #F8FAFC;          /* 浅色文本 */
+  
+  --docusaurus-highlighted-code-line-bg: rgba(59, 130, 246, 0.2);
 }
+
+/* 增强按钮样式 */
+.button--primary {
+  --ifm-button-background-color: var(--ifm-button-background-color);
+  --ifm-button-border-color: var(--ifm-button-background-color);
+  transition: transform 0.2s;
+}
+
+.button--primary:hover {
+  transform: translateY(-2px);
+}
+
