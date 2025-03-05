@@ -8,12 +8,12 @@
 #### API 端点名称
 Method: PUT
 
-PATH:  /{databaseId}/items/properties/{propertyName}?type=<string>
+PATH:  /{project_id}/items/properties/{propertyName}?type=<string>
 #### 参数
 
 | 参数名称       | 类型     | 位置   | 必填 | 描述与约束                                                                                                                                         |
 |----------------|----------|--------|------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `databased`    | string   | path   | Yes  | 数据库ID                                                                                                                                          |
+| `project_id`    | string   | path   | Yes  |                                                                                                                                      |
 | `propertyName` | string   | path   | Yes  | 要创建的属性名称。<br>满足正则表达式 ^[a-zA-Z0-9][a-zA-Z0-9_-:]*$ <br>⚠️ 保留名称（大小写不敏感）：`id`, `itemid`。<br>⛔ 长度限制：不超过63字符。                                                  |
 | `type`         | string   | query  | Yes  | 属性值类型，可选值：<br>`int`（64位有符号整数）、<br>`float`（单精度浮点）、<br>`str`（UTF-8字符串）、<br>`list_int`（整型数组）、<br>`list_float`（浮点型数组）、<br>`list_str`（字符串数组）|
 
@@ -29,7 +29,7 @@ PATH:  /{databaseId}/items/properties/{propertyName}?type=<string>
 #### API 端点名称
 Method: DELETE
 
-PATH:  /{databaseId}/items/properties/{propertyName}
+PATH:  /{project_id}/items/properties/{propertyName}
 
 | 状态码 | 描述               |
 |--------|--------------------|
