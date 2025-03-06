@@ -43,17 +43,44 @@ PATH:  /{project_id}/items/properties/{propertyName}
 
 Method: PUT
 
-PATH: /\{project_id\}/items/sync
+PATH: /\{project_id\}/items/batch_sync
 
 **Body**:
 ```json
 [
     {
         "id":"必须包含主键[id]",
-        "prop1_key":"prop1_value",
-        "prop2_number":1,
-        "prop3_bool":0,
+        "propertyName1":"prop1_value",
+        "propertyName2":1,
+        "propertyName3":[1,2],
+        "propertyName4":[1.0,2],
+        "propertyName4":["s","2"],
         
     }
 ]
 ```
+
+| 状态码 | 描述               |
+|--------|--------------------|
+| 201    | 操作成功完成       |
+| 400    | 输入参数错误，存在非法的 propertyName4 或者类型检测错误    |
+
+
+### 物料删除
+批量删除物料
+
+
+Method: DELETE
+
+PATH: /\{project_id\}/items/batch_delete
+
+**Body**:
+```json
+[
+    "id1","id2"
+]
+```
+
+| 状态码 | 描述               |
+|--------|--------------------|
+| 201    | 操作成功完成       |
