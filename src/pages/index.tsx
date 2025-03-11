@@ -1,13 +1,17 @@
-import React from 'react';
-import { Redirect } from '@docusaurus/router'; // v2.4+ 专用
+import { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
-export default function CustomRedirect() {
-  // 示例：根据条件重定向
+const RedirectComponent = () => {
+  const history = useHistory();
   const shouldRedirect = true; // 你的逻辑
-  
-  return shouldRedirect ? (
-    <Redirect to="https://www.uopensail.com" />
-  ) : (
-    <div></div>
-  );
-}
+
+  useEffect(() => {
+    if (shouldRedirect) {
+      window.location.href = "https://www.uopensail.com";
+    }
+  }, [shouldRedirect, history]);
+
+  return <div></div>;
+};
+
+export default RedirectComponent;
