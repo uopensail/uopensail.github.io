@@ -15,7 +15,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://www.uopensail.com',
+  url: 'https://docs.uopensail.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -77,6 +77,9 @@ const config: Config = {
       logo: {
         alt: 'RecGo Logo',
         src: 'img/logo.svg',
+        href: 'https://www.uopensail.com',
+        target: '_self'//  // 设置新的跳转链接
+
       },
       items: [
         {
