@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkuopensail_github_io=self.webpackChunkuopensail_github_io||[]).push([[4583],{6107:(u,e,s)=>{s.r(e),s.d(e,{default:()=>n});s(6540);var t=s(6347),i=s(4848);function n(){return(0,i.jsx)(t.rd,{to:"https://www.uopensail.com"})}}}]);
