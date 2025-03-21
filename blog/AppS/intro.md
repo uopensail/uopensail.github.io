@@ -2,9 +2,9 @@
 
 Apps functions as a digital distribution platform similar to Apple's AppStore or Google Play, focusing on providing users with a variety of applications and games. Our primary key performance indicator is the number of user downloads and installations, which directly reflects the platform's usage and user satisfaction.
 
-<img title="" src="../static/images/appstore.jpg" alt="" width="476" data-align="center">
+<img title="" src="../../static/images/appstore.jpg" alt="" width="476" data-align="center">
 
-<img title="" src="../static/images/googleplay.png" alt="" width="476" data-align="center">
+<img title="" src="../../static/images/googleplay.png" alt="" width="476" data-align="center">
 
 **Current Status**
 

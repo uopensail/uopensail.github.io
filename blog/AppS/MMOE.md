@@ -2,7 +2,7 @@
 
 In the AppS business, recommendation systems need not only to improve user Click-Through Rate (CTR) but also to enhance Conversion Rate (CVR) to achieve comprehensive user engagement and business growth. The Multi-gate Mixture-of-Experts (MMOE) model offers an efficient solution by simultaneously optimizing multiple objectives to meet these business needs.
 
-<img title="" src="../static/images/MMOE-origin.webp" alt="" data-align="center" width="522">
+<img title="" src="../../static/images/MMOE-origin.webp" alt="" data-align="center" width="522">
 
 ## Introduction
 
@@ -68,7 +68,7 @@ During model training, we use click and download behaviors as task labels and de
 
 This weight allocation ensures that CTR is the primary optimization direction while also considering the CVR objective.
 
-<img title="" src="../static/images/mmoe.webp" alt="" data-align="center" width="445">
+<img title="" src="../../static/images/mmoe.webp" alt="" data-align="center" width="445">
 
 #### 5. Online Inference and Ranking
 
@@ -78,7 +78,7 @@ During online inference, we apply the same weights to PCTR and PCVR and rank the
 
 By applying the MMOE model in the "Guess You Like" module, our AB testing results showed a **13.1%** increase in average distribution per user. This significant improvement validates the effectiveness of the MMOE model in simultaneously optimizing CTR and CVR, bringing higher user engagement and conversion rates to the AppS business.
 
-<img title="" src="../static/images/MMOE-AB.png" alt="" width="522" data-align="center">
+<img title="" src="../../static/images/MMOE-AB.png" alt="" width="522" data-align="center">
 
 ### Conclusion
 

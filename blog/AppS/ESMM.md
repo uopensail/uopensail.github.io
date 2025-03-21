@@ -2,7 +2,7 @@
 
 In modern recommendation systems, particularly within the AppS business environment, predicting user behaviors such as Click-Through Rate (CTR) and Conversion Rate (CVR) is crucial for enhancing user satisfaction and driving business growth. The ESMM model, with its unique architecture and efficient multi-task learning capability, offers an outstanding solution for the AppS business.
 
-<img title="" src="../static/images/ESMM-origin.webp" alt="" width="522" data-align="center">
+<img title="" src="../../static/images/ESMM-origin.webp" alt="" width="522" data-align="center">
 
 ## Introduction
 
@@ -48,7 +48,7 @@ The ESMM model shares many structural similarities with the traditional MMOE mod
 
 ### Key Components of the ESMM Model
 
-<img title="" src="../static/images/ESMM.webp" alt="" width="522" data-align="center">
+<img title="" src="../../static/images/ESMM.webp" alt="" width="522" data-align="center">
 
 #### Two Expert Networks
 
@@ -62,7 +62,7 @@ In addition to expert networks, ESMM also employs two gating mechanisms to contr
 
 In practical applications within the AppS business, the ESMM model has demonstrated significant results through A/B testing. In the "Guess You Like" module, the ESMM model successfully achieved a 6.45% increase in average distribution per user.
 
-<img title="" src="../static/images/ESMM-AB.png" alt="" width="522" data-align="center">
+<img title="" src="../../static/images/ESMM-AB.png" alt="" width="522" data-align="center">
 
 ## Further Reading
 
