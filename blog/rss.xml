@@ -4,7 +4,7 @@
         <title>RecGo Blog</title>
         <link>https://docs.uopensail.com/blog</link>
         <description>RecGo Blog</description>
-        <lastBuildDate>Fri, 21 Mar 2025 13:33:17 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 21 Mar 2025 13:39:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
@@ -12,10 +12,10 @@
             <title><![CDATA[Application of DeepFM Model in AppS]]></title>
             <link>https://docs.uopensail.com/blog/AppS/DeepFM</link>
             <guid>https://docs.uopensail.com/blog/AppS/DeepFM</guid>
-            <pubDate>Fri, 21 Mar 2025 13:33:17 GMT</pubDate>
+            <pubDate>Fri, 21 Mar 2025 13:39:16 GMT</pubDate>
             <description><![CDATA[In the field of recommendation systems, efficiently combining low-order and high-order feature interactions to improve prediction accuracy has always been a key challenge. The DeepFM model offers a solution that combines memory capacity and generalization ability by integrating Factorization Machines (FM) with Deep Neural Networks (DNN). This article will introduce the application and effectiveness of DeepFM in the AppS business.]]></description>
             <content:encoded><![CDATA[<p>In the field of recommendation systems, efficiently combining low-order and high-order feature interactions to improve prediction accuracy has always been a key challenge. The DeepFM model offers a solution that combines memory capacity and generalization ability by integrating Factorization Machines (FM) with Deep Neural Networks (DNN). This article will introduce the application and effectiveness of DeepFM in the AppS business.</p>
-<img decoding="async" loading="lazy" src="https://docs.uopensail.com/blog/static/images/deepfm.svg" title="" alt="" width="522" data-align="center" class="img_ev3q">
+<img decoding="async" loading="lazy" src="https://docs.uopensail.com/static/images/deepfm.svg" title="" alt="" width="522" data-align="center" class="img_ev3q">
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://docs.uopensail.com/blog/AppS/DeepFM#introduction" class="hash-link" aria-label="Introduction的直接链接" title="Introduction的直接链接">​</a></h2>
 <p>DeepFM (Deep Factorization Machine) is a recommendation system model that combines factorization machines (FM) with deep learning. It aims to capture both low-order and high-order feature interactions simultaneously. The architecture of DeepFM consists of two components: the FM component and the Deep component. The FM component is used to capture low-order feature interactions, while the Deep component learns high-order feature interactions through a multi-layer perceptron (MLP).</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="fm-module">FM Module<a href="https://docs.uopensail.com/blog/AppS/DeepFM#fm-module" class="hash-link" aria-label="FM Module的直接链接" title="FM Module的直接链接">​</a></h3>
@@ -65,7 +65,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-ab-testing-results">3. AB Testing Results<a href="https://docs.uopensail.com/blog/AppS/DeepFM#3-ab-testing-results" class="hash-link" aria-label="3. AB Testing Results的直接链接" title="3. AB Testing Results的直接链接">​</a></h3>
 <p>In the "Guess You Like" module, deploying the DeepFM model led to a <strong>4.66%</strong> increase in average distribution per user. This result indicates that DeepFM significantly enhances the quality of personalized recommendations for users.</p>
-<img decoding="async" loading="lazy" src="https://docs.uopensail.com/blog/static/images/DeepFM-AB.png" title="" alt="" width="522" data-align="center" class="img_ev3q">
+<img decoding="async" loading="lazy" src="https://docs.uopensail.com/static/images/DeepFM-AB.png" title="" alt="" width="522" data-align="center" class="img_ev3q">
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="further-reading">Further Reading<a href="https://docs.uopensail.com/blog/AppS/DeepFM#further-reading" class="hash-link" aria-label="Further Reading的直接链接" title="Further Reading的直接链接">​</a></h2>
 <ul>
 <li>
@@ -83,10 +83,10 @@
             <title><![CDATA[Application of the ESMM Model in AppS]]></title>
             <link>https://docs.uopensail.com/blog/AppS/ESMM</link>
             <guid>https://docs.uopensail.com/blog/AppS/ESMM</guid>
-            <pubDate>Fri, 21 Mar 2025 13:33:17 GMT</pubDate>
+            <pubDate>Fri, 21 Mar 2025 13:39:16 GMT</pubDate>
             <description><![CDATA[In modern recommendation systems, particularly within the AppS business environment, predicting user behaviors such as Click-Through Rate (CTR) and Conversion Rate (CVR) is crucial for enhancing user satisfaction and driving business growth. The ESMM model, with its unique architecture and efficient multi-task learning capability, offers an outstanding solution for the AppS business.]]></description>
             <content:encoded><![CDATA[<p>In modern recommendation systems, particularly within the AppS business environment, predicting user behaviors such as Click-Through Rate (CTR) and Conversion Rate (CVR) is crucial for enhancing user satisfaction and driving business growth. The ESMM model, with its unique architecture and efficient multi-task learning capability, offers an outstanding solution for the AppS business.</p>
-<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/blog/static/images/ESMM-origin.webp" alt="" width="522" data-align="center" class="img_ev3q">
+<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/ESMM-origin.webp" alt="" width="522" data-align="center" class="img_ev3q">
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://docs.uopensail.com/blog/AppS/ESMM#introduction" class="hash-link" aria-label="Introduction的直接链接" title="Introduction的直接链接">​</a></h2>
 <p>ESMM, short for Entire Space Multi-task Model, is a multi-task learning model specifically designed to tackle problems related to ad recommendations and user behavior prediction. The core idea of ESMM is to enhance the overall performance of the model by simultaneously learning multiple related tasks. This approach not only shares potential information between different tasks but also effectively alleviates the issue of data sparsity.</p>
 <p>The ESMM model is typically applied to predict CTR and CVR. Traditional methods often train two separate models to predict CTR and CVR, whereas ESMM simultaneously performs these two prediction tasks within a unified framework, thereby capturing the correlation between them more effectively.</p>
@@ -130,14 +130,14 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="similarity-in-basic-structure-between-esmm-and-mmoe">Similarity in Basic Structure Between ESMM and MMOE<a href="https://docs.uopensail.com/blog/AppS/ESMM#similarity-in-basic-structure-between-esmm-and-mmoe" class="hash-link" aria-label="Similarity in Basic Structure Between ESMM and MMOE的直接链接" title="Similarity in Basic Structure Between ESMM and MMOE的直接链接">​</a></h3>
 <p>The ESMM model shares many structural similarities with the traditional MMOE model. Both employ a multi-task learning framework to enhance the performance of different tasks by sharing information. However, the ESMM model adopts a different approach in the final conversion rate prediction: it calculates the predicted Conversion Rate (pCVR) as the product of two towers, a design aimed at fully capturing the interaction between CTR and CVR.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="key-components-of-the-esmm-model">Key Components of the ESMM Model<a href="https://docs.uopensail.com/blog/AppS/ESMM#key-components-of-the-esmm-model" class="hash-link" aria-label="Key Components of the ESMM Model的直接链接" title="Key Components of the ESMM Model的直接链接">​</a></h3>
-<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/blog/static/images/ESMM.webp" alt="" width="522" data-align="center" class="img_ev3q">
+<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/ESMM.webp" alt="" width="522" data-align="center" class="img_ev3q">
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="two-expert-networks">Two Expert Networks<a href="https://docs.uopensail.com/blog/AppS/ESMM#two-expert-networks" class="hash-link" aria-label="Two Expert Networks的直接链接" title="Two Expert Networks的直接链接">​</a></h4>
 <p>When applied to the AppS business, ESMM uses two expert networks. These expert networks are responsible for handling features related to CTR and CVR tasks, respectively. Through specialized network structures, ESMM can better extract and utilize task-specific information, thereby enhancing prediction accuracy.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="two-gating-mechanisms">Two Gating Mechanisms<a href="https://docs.uopensail.com/blog/AppS/ESMM#two-gating-mechanisms" class="hash-link" aria-label="Two Gating Mechanisms的直接链接" title="Two Gating Mechanisms的直接链接">​</a></h4>
 <p>In addition to expert networks, ESMM also employs two gating mechanisms to control the CTR and CVR tasks separately. These gating mechanisms dynamically adjust the selection and utilization of features for each task, ensuring that each task receives the most suitable information flow. Through optimization of gating mechanisms, ESMM provides more precise results in complex user behavior predictions.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="experimental-results-and-effects">Experimental Results and Effects<a href="https://docs.uopensail.com/blog/AppS/ESMM#experimental-results-and-effects" class="hash-link" aria-label="Experimental Results and Effects的直接链接" title="Experimental Results and Effects的直接链接">​</a></h2>
 <p>In practical applications within the AppS business, the ESMM model has demonstrated significant results through A/B testing. In the "Guess You Like" module, the ESMM model successfully achieved a 6.45% increase in average distribution per user.</p>
-<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/blog/static/images/ESMM-AB.png" alt="" width="522" data-align="center" class="img_ev3q">
+<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/ESMM-AB.png" alt="" width="522" data-align="center" class="img_ev3q">
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="further-reading">Further Reading<a href="https://docs.uopensail.com/blog/AppS/ESMM#further-reading" class="hash-link" aria-label="Further Reading的直接链接" title="Further Reading的直接链接">​</a></h2>
 <ul>
 <li>
@@ -152,14 +152,14 @@
 </ul>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Application of Factorization Machines (FM) Model in Application Store (AppS)]]></title>
+            <title><![CDATA[Application of FM Model in AppS]]></title>
             <link>https://docs.uopensail.com/blog/AppS/FM</link>
             <guid>https://docs.uopensail.com/blog/AppS/FM</guid>
-            <pubDate>Fri, 21 Mar 2025 13:33:17 GMT</pubDate>
+            <pubDate>Fri, 21 Mar 2025 13:39:16 GMT</pubDate>
             <description><![CDATA[Introduction]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://docs.uopensail.com/blog/AppS/FM#introduction" class="hash-link" aria-label="Introduction的直接链接" title="Introduction的直接链接">​</a></h2>
 <p>Factorization Machines (FM) are powerful machine learning models, especially widely used in recommendation systems and advertising click-through rate prediction. FM models can effectively capture the cross information between features and are highly efficient and easy to implement in engineering.</p>
-<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/blog/static/images/FM.jpg" alt="" width="522" data-align="center" class="img_ev3q">
+<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/FM.jpg" alt="" width="522" data-align="center" class="img_ev3q">
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-advantages-of-fm-over-linear-regression-lr">1. Advantages of FM over Linear Regression (LR)<a href="https://docs.uopensail.com/blog/AppS/FM#1-advantages-of-fm-over-linear-regression-lr" class="hash-link" aria-label="1. Advantages of FM over Linear Regression (LR)的直接链接" title="1. Advantages of FM over Linear Regression (LR)的直接链接">​</a></h3>
 <p>Linear Regression (LR) is a simple and intuitive model, but it cannot capture the cross and nonlinear relationships between features. The FM model introduces latent vectors to factorize features, effectively capturing second-order interactions between features. Compared to LR, FM has the following advantages:</p>
 <ul>
@@ -201,7 +201,7 @@
 <p>To resolve this issue, we differentiated the reported data on the first screen, removing the cached data. This approach ensured that the model was trained using genuine user behavior data, ultimately ensuring the effectiveness of the model once deployed.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-ab-testing-results">4. AB Testing Results<a href="https://docs.uopensail.com/blog/AppS/FM#4-ab-testing-results" class="hash-link" aria-label="4. AB Testing Results的直接链接" title="4. AB Testing Results的直接链接">​</a></h3>
 <p>The effect of online weighting was verified through AB testing. Specific AB test screenshots will be presented here, further proving the effectiveness of our optimization strategies in practical applications. In the <strong>Guess You Like</strong> section on the homepage, the average distribution per person increased by <strong>14.8%</strong>.</p>
-<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/blog/static/images/FM-AB.webp" alt="" width="522" data-align="center" class="img_ev3q">
+<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/FM-AB.webp" alt="" width="522" data-align="center" class="img_ev3q">
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="further-reading">Further Reading<a href="https://docs.uopensail.com/blog/AppS/FM#further-reading" class="hash-link" aria-label="Further Reading的直接链接" title="Further Reading的直接链接">​</a></h2>
 <ul>
 <li>
@@ -216,10 +216,10 @@
             <title><![CDATA[Application of the MMOE Model in AppS]]></title>
             <link>https://docs.uopensail.com/blog/AppS/MMOE</link>
             <guid>https://docs.uopensail.com/blog/AppS/MMOE</guid>
-            <pubDate>Fri, 21 Mar 2025 13:33:17 GMT</pubDate>
+            <pubDate>Fri, 21 Mar 2025 13:39:16 GMT</pubDate>
             <description><![CDATA[In the AppS business, recommendation systems need not only to improve user Click-Through Rate (CTR) but also to enhance Conversion Rate (CVR) to achieve comprehensive user engagement and business growth. The Multi-gate Mixture-of-Experts (MMOE) model offers an efficient solution by simultaneously optimizing multiple objectives to meet these business needs.]]></description>
             <content:encoded><![CDATA[<p>In the AppS business, recommendation systems need not only to improve user Click-Through Rate (CTR) but also to enhance Conversion Rate (CVR) to achieve comprehensive user engagement and business growth. The Multi-gate Mixture-of-Experts (MMOE) model offers an efficient solution by simultaneously optimizing multiple objectives to meet these business needs.</p>
-<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/blog/static/images/MMOE-origin.webp" alt="" data-align="center" width="522" class="img_ev3q">
+<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/MMOE-origin.webp" alt="" data-align="center" width="522" class="img_ev3q">
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://docs.uopensail.com/blog/AppS/MMOE#introduction" class="hash-link" aria-label="Introduction的直接链接" title="Introduction的直接链接">​</a></h2>
 <p>In the field of recommendation systems and advertising, models often need to optimize multiple objectives simultaneously, such as Click-Through Rate (CTR) and Conversion Rate (CVR). The Multi-gate Mixture-of-Experts (MMOE) model provides an effective solution by achieving better goal synergy optimization within a multi-task learning framework.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-what-is-mmoe">1. What is MMOE?<a href="https://docs.uopensail.com/blog/AppS/MMOE#1-what-is-mmoe" class="hash-link" aria-label="1. What is MMOE?的直接链接" title="1. What is MMOE?的直接链接">​</a></h3>
@@ -272,12 +272,12 @@
 </li>
 </ul>
 <p>This weight allocation ensures that CTR is the primary optimization direction while also considering the CVR objective.</p>
-<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/blog/static/images/mmoe.webp" alt="" data-align="center" width="445" class="img_ev3q">
+<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/mmoe.webp" alt="" data-align="center" width="445" class="img_ev3q">
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="5-online-inference-and-ranking">5. Online Inference and Ranking<a href="https://docs.uopensail.com/blog/AppS/MMOE#5-online-inference-and-ranking" class="hash-link" aria-label="5. Online Inference and Ranking的直接链接" title="5. Online Inference and Ranking的直接链接">​</a></h4>
 <p>During online inference, we apply the same weights to PCTR and PCVR and rank them based on the weighted scores. Through this strategy, we can balance the priorities of clicks and downloads in recommendation ranking, optimizing user experience and business metrics.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="ab-testing-results">AB Testing Results<a href="https://docs.uopensail.com/blog/AppS/MMOE#ab-testing-results" class="hash-link" aria-label="AB Testing Results的直接链接" title="AB Testing Results的直接链接">​</a></h3>
 <p>By applying the MMOE model in the "Guess You Like" module, our AB testing results showed a <strong>13.1%</strong> increase in average distribution per user. This significant improvement validates the effectiveness of the MMOE model in simultaneously optimizing CTR and CVR, bringing higher user engagement and conversion rates to the AppS business.</p>
-<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/blog/static/images/MMOE-AB.png" alt="" width="522" data-align="center" class="img_ev3q">
+<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/MMOE-AB.png" alt="" width="522" data-align="center" class="img_ev3q">
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="https://docs.uopensail.com/blog/AppS/MMOE#conclusion" class="hash-link" aria-label="Conclusion的直接链接" title="Conclusion的直接链接">​</a></h3>
 <p>The MMOE model achieves comprehensive optimization of CTR and CVR in the AppS business through its flexible expert and gating mechanisms. Combined with the FM cross strategy, MMOE not only enhances the predictive ability of recommendation systems but also improves multi-objective synergy optimization of user behavior, providing strong support for business development.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="further-reading">Further Reading<a href="https://docs.uopensail.com/blog/AppS/MMOE#further-reading" class="hash-link" aria-label="Further Reading的直接链接" title="Further Reading的直接链接">​</a></h2>
@@ -295,11 +295,11 @@ Multi-gate Mixture-of-Experts</a></p>
             <title><![CDATA[Applicaton Store(AppS) Introduction]]></title>
             <link>https://docs.uopensail.com/blog/AppS/intro</link>
             <guid>https://docs.uopensail.com/blog/AppS/intro</guid>
-            <pubDate>Fri, 21 Mar 2025 13:33:17 GMT</pubDate>
+            <pubDate>Fri, 21 Mar 2025 13:39:16 GMT</pubDate>
             <description><![CDATA[Apps functions as a digital distribution platform similar to Apple's AppStore or Google Play, focusing on providing users with a variety of applications and games. Our primary key performance indicator is the number of user downloads and installations, which directly reflects the platform's usage and user satisfaction.]]></description>
             <content:encoded><![CDATA[<p>Apps functions as a digital distribution platform similar to Apple's AppStore or Google Play, focusing on providing users with a variety of applications and games. Our primary key performance indicator is the number of user downloads and installations, which directly reflects the platform's usage and user satisfaction.</p>
-<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/blog/static/images/appstore.jpg" alt="" width="476" data-align="center" class="img_ev3q">
-<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/blog/static/images/googleplay.png" alt="" width="476" data-align="center" class="img_ev3q">
+<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/appstore.jpg" alt="" width="476" data-align="center" class="img_ev3q">
+<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/googleplay.png" alt="" width="476" data-align="center" class="img_ev3q">
 <p><strong>Current Status</strong></p>
 <ol>
 <li>
