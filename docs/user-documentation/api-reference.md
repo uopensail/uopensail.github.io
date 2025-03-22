@@ -84,3 +84,22 @@ PATH: /\{project_id\}/items/batch_delete
 | 状态码 | 描述               |
 |--------|--------------------|
 | 201    | 操作成功完成       |
+
+
+## 推荐
+
+### 获取推荐物料
+
+Method: POST
+PATH:  /{project_id}/recommend/items
+
+**Request Body**:
+```json
+{
+
+}
+```
+
+| 状态码 | 描述               |
+|--------|--------------------|
+| 200   |       |
