@@ -4,7 +4,9 @@
 
 Factorization Machines (FM) are powerful machine learning models, especially widely used in recommendation systems and advertising click-through rate prediction. FM models can effectively capture the cross information between features and are highly efficient and easy to implement in engineering.
 
-<img title="" src="../../static/images/FM.jpg" alt="" width="522" data-align="center">
+<center>
+<img title="" src="../../static/images/FM.jpg" alt="" width="400" data-align="center">
+</center>
 
 ### 1. Advantages of FM over Linear Regression (LR)
 
@@ -106,10 +108,13 @@ To resolve this issue, we differentiated the reported data on the first screen, 
 
 The effect of online weighting was verified through AB testing. Specific AB test screenshots will be presented here, further proving the effectiveness of our optimization strategies in practical applications. In the **Guess You Like** section on the homepage, the average distribution per person increased by **14.8%**.
 
+<center>
 <img title="" src="../../static/images/FM-AB.webp" alt="" width="522" data-align="center">
+
+</center>
 
 ## Further Reading
 
-- [Factorization Machine models in PyTorch - GitHub](https://github.com/rixwew/pytorch-fm)
+[Factorization Machine models in PyTorch - GitHub](https://github.com/rixwew/pytorch-fm)
 
-- [Factorization Machines](https://d2l.ai/chapter_recommender-systems/fm.html)
+[Factorization Machines](https://d2l.ai/chapter_recommender-systems/fm.html)

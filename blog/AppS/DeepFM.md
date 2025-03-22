@@ -2,7 +2,9 @@
 
 In the field of recommendation systems, efficiently combining low-order and high-order feature interactions to improve prediction accuracy has always been a key challenge. The DeepFM model offers a solution that combines memory capacity and generalization ability by integrating Factorization Machines (FM) with Deep Neural Networks (DNN). This article will introduce the application and effectiveness of DeepFM in the AppS business.
 
-<img src="../../static/images/deepfm.svg" title="" alt="" width="522" data-align="center">
+<center>
+<img src="../../static/images/deepfm.svg" title="" alt="" width="400" data-align="center">
+</center>
 
 ## Introduction
 
@@ -113,12 +115,14 @@ Building on our experience with FM model training, the DeepFM model excels in co
 
 In the "Guess You Like" module, deploying the DeepFM model led to a **4.66%** increase in average distribution per user. This result indicates that DeepFM significantly enhances the quality of personalized recommendations for users.
 
+<center>
 <img src="../../static/images/DeepFM-AB.png" title="" alt="" width="522" data-align="center">
+</center>
 
 ## Further Reading
 
-- [A Factorization-Machine based Neural Network for CTR Prediction - arXiv](https://arxiv.org/abs/1703.04247)
+[A Factorization-Machine based Neural Network for CTR Prediction - arXiv](https://arxiv.org/abs/1703.04247)
 
-- [Deep Factorization Machines — Dive into Deep Learning](https://d2l.ai/chapter_recommender-systems/deepfm.html)
+[Deep Factorization Machines — Dive into Deep Learning](https://d2l.ai/chapter_recommender-systems/deepfm.html)
 
-- [DeepFM for recommendation systems explained with codes](https://medium.com/data-science-in-your-pocket/deepfm-for-recommendation-systems-explained-with-codes-c200063990f7)
+[DeepFM for recommendation systems explained with codes](https://medium.com/data-science-in-your-pocket/deepfm-for-recommendation-systems-explained-with-codes-c200063990f7)

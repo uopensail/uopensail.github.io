@@ -1,9 +1,9 @@
 # Application of the MMOE Model in AppS
 
 In the AppS business, recommendation systems need not only to improve user Click-Through Rate (CTR) but also to enhance Conversion Rate (CVR) to achieve comprehensive user engagement and business growth. The Multi-gate Mixture-of-Experts (MMOE) model offers an efficient solution by simultaneously optimizing multiple objectives to meet these business needs.
-
-<img title="" src="../../static/images/MMOE-origin.webp" alt="" data-align="center" width="522">
-
+<center>
+<img title="" src="../../static/images/MMOE-origin.webp" alt="" data-align="center" width="400">
+</center>
 ## Introduction
 
 In the field of recommendation systems and advertising, models often need to optimize multiple objectives simultaneously, such as Click-Through Rate (CTR) and Conversion Rate (CVR). The Multi-gate Mixture-of-Experts (MMOE) model provides an effective solution by achieving better goal synergy optimization within a multi-task learning framework.
@@ -67,8 +67,9 @@ During model training, we use click and download behaviors as task labels and de
   - The loss weight for PCTCVR is set to 0.05, ensuring that download behavior receives appropriate attention.
 
 This weight allocation ensures that CTR is the primary optimization direction while also considering the CVR objective.
-
-<img title="" src="../../static/images/mmoe.webp" alt="" data-align="center" width="445">
+<center>
+<img title="" src="../../static/images/mmoe.webp" alt="" data-align="center" width="400">
+</center>
 
 #### 5. Online Inference and Ranking
 
@@ -78,7 +79,9 @@ During online inference, we apply the same weights to PCTR and PCVR and rank the
 
 By applying the MMOE model in the "Guess You Like" module, our AB testing results showed a **13.1%** increase in average distribution per user. This significant improvement validates the effectiveness of the MMOE model in simultaneously optimizing CTR and CVR, bringing higher user engagement and conversion rates to the AppS business.
 
+<center>
 <img title="" src="../../static/images/MMOE-AB.png" alt="" width="522" data-align="center">
+</center>
 
 ### Conclusion
 
@@ -86,7 +89,7 @@ The MMOE model achieves comprehensive optimization of CTR and CVR in the AppS bu
 
 ## Further Reading
 
-- [Modeling Task Relationships in Multi-task Learning with
+[Modeling Task Relationships in Multi-task Learning with
   Multi-gate Mixture-of-Experts](https://dl.acm.org/doi/pdf/10.1145/3219819.3220007)
 
-- [The Annotated Multi-Task Ranker: An MMoE Code Example](https://www.yuan-meng.com/posts/mtml/)
+[The Annotated Multi-Task Ranker: An MMoE Code Example](https://www.yuan-meng.com/posts/mtml/)
