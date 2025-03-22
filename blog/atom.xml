@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.uopensail.com/blog</id>
     <title>RecGo Blog</title>
-    <updated>2025-03-22T04:27:30.000Z</updated>
+    <updated>2025-03-22T08:54:54.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.uopensail.com/blog"/>
     <subtitle>RecGo Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Application of DeepFM Model in AppS]]></title>
         <id>https://docs.uopensail.com/blog/AppS/DeepFM</id>
         <link href="https://docs.uopensail.com/blog/AppS/DeepFM"/>
-        <updated>2025-03-22T04:27:30.000Z</updated>
+        <updated>2025-03-22T08:54:54.000Z</updated>
         <summary type="html"><![CDATA[In the field of recommendation systems, efficiently combining low-order and high-order feature interactions to improve prediction accuracy has always been a key challenge. The DeepFM model offers a solution that combines memory capacity and generalization ability by integrating Factorization Machines (FM) with Deep Neural Networks (DNN). This article will introduce the application and effectiveness of DeepFM in the AppS business.]]></summary>
         <content type="html"><![CDATA[<p>In the field of recommendation systems, efficiently combining low-order and high-order feature interactions to improve prediction accuracy has always been a key challenge. The DeepFM model offers a solution that combines memory capacity and generalization ability by integrating Factorization Machines (FM) with Deep Neural Networks (DNN). This article will introduce the application and effectiveness of DeepFM in the AppS business.</p>
 <img decoding="async" loading="lazy" src="https://docs.uopensail.com/static/images/deepfm.svg" title="" alt="" width="522" data-align="center" class="img_ev3q">
@@ -82,7 +82,7 @@
         <title type="html"><![CDATA[Application of the ESMM Model in AppS]]></title>
         <id>https://docs.uopensail.com/blog/AppS/ESMM</id>
         <link href="https://docs.uopensail.com/blog/AppS/ESMM"/>
-        <updated>2025-03-22T04:27:30.000Z</updated>
+        <updated>2025-03-22T08:54:54.000Z</updated>
         <summary type="html"><![CDATA[In modern recommendation systems, particularly within the AppS business environment, predicting user behaviors such as Click-Through Rate (CTR) and Conversion Rate (CVR) is crucial for enhancing user satisfaction and driving business growth. The ESMM model, with its unique architecture and efficient multi-task learning capability, offers an outstanding solution for the AppS business.]]></summary>
         <content type="html"><![CDATA[<p>In modern recommendation systems, particularly within the AppS business environment, predicting user behaviors such as Click-Through Rate (CTR) and Conversion Rate (CVR) is crucial for enhancing user satisfaction and driving business growth. The ESMM model, with its unique architecture and efficient multi-task learning capability, offers an outstanding solution for the AppS business.</p>
 <img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/ESMM-origin.webp" alt="" width="522" data-align="center" class="img_ev3q">
@@ -154,7 +154,7 @@
         <title type="html"><![CDATA[Application of FM Model in AppS]]></title>
         <id>https://docs.uopensail.com/blog/AppS/FM</id>
         <link href="https://docs.uopensail.com/blog/AppS/FM"/>
-        <updated>2025-03-22T04:27:30.000Z</updated>
+        <updated>2025-03-22T08:54:54.000Z</updated>
         <summary type="html"><![CDATA[Introduction]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://docs.uopensail.com/blog/AppS/FM#introduction" class="hash-link" aria-label="Introduction的直接链接" title="Introduction的直接链接">​</a></h2>
 <p>Factorization Machines (FM) are powerful machine learning models, especially widely used in recommendation systems and advertising click-through rate prediction. FM models can effectively capture the cross information between features and are highly efficient and easy to implement in engineering.</p>
@@ -215,7 +215,7 @@
         <title type="html"><![CDATA[Application of the MMOE Model in AppS]]></title>
         <id>https://docs.uopensail.com/blog/AppS/MMOE</id>
         <link href="https://docs.uopensail.com/blog/AppS/MMOE"/>
-        <updated>2025-03-22T04:27:30.000Z</updated>
+        <updated>2025-03-22T08:54:54.000Z</updated>
         <summary type="html"><![CDATA[In the AppS business, recommendation systems need not only to improve user Click-Through Rate (CTR) but also to enhance Conversion Rate (CVR) to achieve comprehensive user engagement and business growth. The Multi-gate Mixture-of-Experts (MMOE) model offers an efficient solution by simultaneously optimizing multiple objectives to meet these business needs.]]></summary>
         <content type="html"><![CDATA[<p>In the AppS business, recommendation systems need not only to improve user Click-Through Rate (CTR) but also to enhance Conversion Rate (CVR) to achieve comprehensive user engagement and business growth. The Multi-gate Mixture-of-Experts (MMOE) model offers an efficient solution by simultaneously optimizing multiple objectives to meet these business needs.</p>
 <img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/MMOE-origin.webp" alt="" data-align="center" width="522" class="img_ev3q">
@@ -291,10 +291,72 @@ Multi-gate Mixture-of-Experts</a></p>
 </ul>]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[The One Epoch Phenomenon in Recommendation Algorithms]]></title>
+        <id>https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo</id>
+        <link href="https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo"/>
+        <updated>2025-03-22T08:54:54.000Z</updated>
+        <summary type="html"><![CDATA[In the field of Click-Through Rate (CTR) prediction and recommendation systems, the "ONE EPOCH phenomenon" refers to the overfitting phenomenon where deep models achieve optimal generalization performance after only one epoch of training, and continued training leads to a sharp decline in performance on the test set.]]></summary>
+        <content type="html"><![CDATA[<p>In the field of Click-Through Rate (CTR) prediction and recommendation systems, the "ONE EPOCH phenomenon" refers to the overfitting phenomenon where deep models achieve optimal generalization performance after only one epoch of training, and continued training leads to a sharp decline in performance on the test set.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="phenomenon-characteristics">Phenomenon Characteristics<a href="https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo#phenomenon-characteristics" class="hash-link" aria-label="Phenomenon Characteristics的直接链接" title="Phenomenon Characteristics的直接链接">​</a></h2>
+<ul>
+<li>Performance During Training‌</li>
+</ul>
+<p>The model reaches a peak AUC on the test set at the end of the first epoch, and performance rapidly declines after the start of the second epoch.
+Overfitting manifests as a continuous decrease in training loss, but validation set metrics (such as AUC) significantly deteriorate after one epoch.</p>
+<ul>
+<li>Relevance to Industrial Practice‌</li>
+</ul>
+<p>This phenomenon explains why many industrial-grade recommendation systems stop training after only one epoch of data, rather than following the multiple iterations typical of traditional deep learning.</p>
+<center>
+<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/one-epoch-1.png" alt="" width="268" data-align="center" class="img_ev3q">
+<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/one-epoch-2.png" alt="" width="261" data-align="center" class="img_ev3q">
+</center>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-causes">Key Causes<a href="https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo#key-causes" class="hash-link" aria-label="Key Causes的直接链接" title="Key Causes的直接链接">​</a></h2>
+<ul>
+<li>Feature Sparsity‌</li>
+</ul>
+<p><strong>The high number of IDs in feature domains</strong> (such as user IDs, product IDs) results in extremely low frequencies of occurrence for each ID, making the model prone to memorizing sparse samples rather than generalizing.
+The Embedding layer corresponding to sparse features overfits low-frequency IDs during multiple training epochs.</p>
+<ul>
+<li>Model Optimization Characteristics‌</li>
+</ul>
+<p><strong>Strong optimizers (such as Adam) and larger learning rates</strong> accelerate convergence, enabling the model to complete effective learning within one epoch, with subsequent training falling into local overfitting.
+Complex model structures (such as deep networks) with excessive capacity exacerbate the memorization of noise/sparse features.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="mitigation-strategies">Mitigation Strategies<a href="https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo#mitigation-strategies" class="hash-link" aria-label="Mitigation Strategies的直接链接" title="Mitigation Strategies的直接链接">​</a></h2>
+<ul>
+<li>Feature Engineering Optimization‌</li>
+</ul>
+<p>Reduce Sparsity‌: Merge low-frequency IDs, use default values to replace sparse IDs, reduce hash space.
+Dynamic Feature Filtering‌: Dynamically adjust the participation intensity of sparse features based on the training stage.</p>
+<ul>
+<li>Training Parameter Adjustment‌</li>
+</ul>
+<p>Limit Training Epochs‌: Force training to stop after only one epoch.
+Learning Rate Control‌: Use a smaller initial learning rate or a learning rate decay strategy.</p>
+<ul>
+<li>Model Structure Improvement‌</li>
+</ul>
+<p>Simplify the Embedding layer or introduce regularization (such as Dropout) to suppress overfitting.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="insights-from-industrial-practice">Insights from Industrial Practice<a href="https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo#insights-from-industrial-practice" class="hash-link" aria-label="Insights from Industrial Practice的直接链接" title="Insights from Industrial Practice的直接链接">​</a></h2>
+<ul>
+<li>Strong Correlation with Data Distribution‌</li>
+</ul>
+<p>This phenomenon is particularly significant in high-sparsity business scenarios (such as advertising recommendations, e-commerce CTR prediction), but rarely occurs in dense data tasks.</p>
+<ul>
+<li>Priority of Optimization Directions‌</li>
+</ul>
+<p>The industrial community tends to directly avoid the problem through feature engineering and early stopping strategies, rather than modifying the model structure.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="theoretical-hypotheses">Theoretical Hypotheses<a href="https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo#theoretical-hypotheses" class="hash-link" aria-label="Theoretical Hypotheses的直接链接" title="Theoretical Hypotheses的直接链接">​</a></h2>
+<p>Some studies suggest that the ONE EPOCH phenomenon may stem from the dynamic balance between sample memorization and generalization: in the first epoch, the model completes coarse-grained learning of key features, and subsequent training disrupts generalization ability due to over-refinement of local features.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="further-reading">Further Reading<a href="https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo#further-reading" class="hash-link" aria-label="Further Reading的直接链接" title="Further Reading的直接链接">​</a></h2>
+<p><a href="https://arxiv.org/pdf/2209.06053" target="_blank" rel="noopener noreferrer">Towards Understanding the Overfitting Phenomenon of Deep Click-Through Rate Prediction Models</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/669063912" target="_blank" rel="noopener noreferrer">Ali's OneEpoch VS KuaiShou's MultiEpoch</a></p>]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Applicaton Store(AppS) Introduction]]></title>
         <id>https://docs.uopensail.com/blog/AppS/intro</id>
         <link href="https://docs.uopensail.com/blog/AppS/intro"/>
-        <updated>2025-03-22T04:27:30.000Z</updated>
+        <updated>2025-03-22T08:54:54.000Z</updated>
         <summary type="html"><![CDATA[Apps functions as a digital distribution platform similar to Apple's AppStore or Google Play, focusing on providing users with a variety of applications and games. Our primary key performance indicator is the number of user downloads and installations, which directly reflects the platform's usage and user satisfaction.]]></summary>
         <content type="html"><![CDATA[<p>Apps functions as a digital distribution platform similar to Apple's AppStore or Google Play, focusing on providing users with a variety of applications and games. Our primary key performance indicator is the number of user downloads and installations, which directly reflects the platform's usage and user satisfaction.</p>
 <img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/appstore.jpg" alt="" width="476" data-align="center" class="img_ev3q">
