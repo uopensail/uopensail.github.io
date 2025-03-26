@@ -2,16 +2,236 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.uopensail.com/blog</id>
     <title>RecGo Blog</title>
-    <updated>2025-03-22T09:04:18.000Z</updated>
+    <updated>2025-03-26T00:40:13.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.uopensail.com/blog"/>
     <subtitle>RecGo Blog</subtitle>
     <icon>https://docs.uopensail.com/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[The One Epoch Phenomenon in Recommendation Algorithms]]></title>
+        <id>https://docs.uopensail.com/blog/OneEpochInRecAlgo</id>
+        <link href="https://docs.uopensail.com/blog/OneEpochInRecAlgo"/>
+        <updated>2025-03-26T00:40:13.000Z</updated>
+        <summary type="html"><![CDATA[In the field of Click-Through Rate (CTR) prediction and recommendation systems, the "ONE EPOCH phenomenon" refers to the overfitting phenomenon where deep models achieve optimal generalization performance after only one epoch of training, and continued training leads to a sharp decline in performance on the test set.]]></summary>
+        <content type="html"><![CDATA[<p>In the field of Click-Through Rate (CTR) prediction and recommendation systems, the "ONE EPOCH phenomenon" refers to the overfitting phenomenon where deep models achieve optimal generalization performance after only one epoch of training, and continued training leads to a sharp decline in performance on the test set.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="phenomenon-characteristics">Phenomenon Characteristics<a href="https://docs.uopensail.com/blog/OneEpochInRecAlgo#phenomenon-characteristics" class="hash-link" aria-label="Phenomenon Characteristics的直接链接" title="Phenomenon Characteristics的直接链接">​</a></h2>
+<ul>
+<li>Performance During Training‌</li>
+</ul>
+<p>The model reaches a peak AUC on the test set at the end of the first epoch, and performance rapidly declines after the start of the second epoch.
+Overfitting manifests as a continuous decrease in training loss, but validation set metrics (such as AUC) significantly deteriorate after one epoch.</p>
+<ul>
+<li>Relevance to Industrial Practice‌</li>
+</ul>
+<p>This phenomenon explains why many industrial-grade recommendation systems stop training after only one epoch of data, rather than following the multiple iterations typical of traditional deep learning.</p>
+<center>
+<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/one-epoch-1.png" alt="" width="268" data-align="center" class="img_ev3q">
+<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/one-epoch-2.png" alt="" width="261" data-align="center" class="img_ev3q">
+</center>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-causes">Key Causes<a href="https://docs.uopensail.com/blog/OneEpochInRecAlgo#key-causes" class="hash-link" aria-label="Key Causes的直接链接" title="Key Causes的直接链接">​</a></h2>
+<ul>
+<li>Feature Sparsity‌</li>
+</ul>
+<p><strong>The high number of IDs in feature domains</strong> (such as user IDs, product IDs) results in extremely low frequencies of occurrence for each ID, making the model prone to memorizing sparse samples rather than generalizing.
+The Embedding layer corresponding to sparse features overfits low-frequency IDs during multiple training epochs.</p>
+<ul>
+<li>Model Optimization Characteristics‌</li>
+</ul>
+<p><strong>Strong optimizers (such as Adam) and larger learning rates</strong> accelerate convergence, enabling the model to complete effective learning within one epoch, with subsequent training falling into local overfitting.
+Complex model structures (such as deep networks) with excessive capacity exacerbate the memorization of noise/sparse features.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="mitigation-strategies">Mitigation Strategies<a href="https://docs.uopensail.com/blog/OneEpochInRecAlgo#mitigation-strategies" class="hash-link" aria-label="Mitigation Strategies的直接链接" title="Mitigation Strategies的直接链接">​</a></h2>
+<ul>
+<li>Feature Engineering Optimization‌</li>
+</ul>
+<p>Reduce Sparsity‌: Merge low-frequency IDs, use default values to replace sparse IDs, reduce hash space.
+Dynamic Feature Filtering‌: Dynamically adjust the participation intensity of sparse features based on the training stage.</p>
+<ul>
+<li>Training Parameter Adjustment‌</li>
+</ul>
+<p>Limit Training Epochs‌: Force training to stop after only one epoch.
+Learning Rate Control‌: Use a smaller initial learning rate or a learning rate decay strategy.</p>
+<ul>
+<li>Model Structure Improvement‌</li>
+</ul>
+<p>Simplify the Embedding layer or introduce regularization (such as Dropout) to suppress overfitting.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="insights-from-industrial-practice">Insights from Industrial Practice<a href="https://docs.uopensail.com/blog/OneEpochInRecAlgo#insights-from-industrial-practice" class="hash-link" aria-label="Insights from Industrial Practice的直接链接" title="Insights from Industrial Practice的直接链接">​</a></h2>
+<ul>
+<li>Strong Correlation with Data Distribution‌</li>
+</ul>
+<p>This phenomenon is particularly significant in high-sparsity business scenarios (such as advertising recommendations, e-commerce CTR prediction), but rarely occurs in dense data tasks.</p>
+<ul>
+<li>Priority of Optimization Directions‌</li>
+</ul>
+<p>The industrial community tends to directly avoid the problem through feature engineering and early stopping strategies, rather than modifying the model structure.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="theoretical-hypotheses">Theoretical Hypotheses<a href="https://docs.uopensail.com/blog/OneEpochInRecAlgo#theoretical-hypotheses" class="hash-link" aria-label="Theoretical Hypotheses的直接链接" title="Theoretical Hypotheses的直接链接">​</a></h2>
+<p>Some studies suggest that the ONE EPOCH phenomenon may stem from the dynamic balance between sample memorization and generalization: in the first epoch, the model completes coarse-grained learning of key features, and subsequent training disrupts generalization ability due to over-refinement of local features.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="further-reading">Further Reading<a href="https://docs.uopensail.com/blog/OneEpochInRecAlgo#further-reading" class="hash-link" aria-label="Further Reading的直接链接" title="Further Reading的直接链接">​</a></h2>
+<p><a href="https://arxiv.org/pdf/2209.06053" target="_blank" rel="noopener noreferrer">Towards Understanding the Overfitting Phenomenon of Deep Click-Through Rate Prediction Models</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/669063912" target="_blank" rel="noopener noreferrer">Ali's OneEpoch VS KuaiShou's MultiEpoch</a></p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RecGo 如何实现内存管理优化：化零为整的工程实践]]></title>
+        <id>https://docs.uopensail.com/blog/RecGo 如何实现内存管理优化：化零为整的工程实践</id>
+        <link href="https://docs.uopensail.com/blog/RecGo 如何实现内存管理优化：化零为整的工程实践"/>
+        <updated>2025-03-26T00:40:13.000Z</updated>
+        <summary type="html"><![CDATA[概述]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="概述">概述<a href="https://docs.uopensail.com/blog/RecGo%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E4%BC%98%E5%8C%96%EF%BC%9A%E5%8C%96%E9%9B%B6%E4%B8%BA%E6%95%B4%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5#%E6%A6%82%E8%BF%B0" class="hash-link" aria-label="概述的直接链接" title="概述的直接链接">​</a></h2>
+<p>在RecGo推荐系统的核心架构中，物料特征的内存管理一直是性能优化的重点（详见《RecGo特征系统设计原理》）。我们采用内存驻留方案实现了亚毫秒级特征访问，但在实际落地过程中发现了新的挑战：动态加载海量物料特征时，频繁创建的内存碎片对象导致Go GC出现严重性能瓶颈。本文将深入解析我们如何通过创新内存分配方案彻底解决该问题。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="问题分析小对象引发的gc风暴">问题分析：小对象引发的GC风暴<a href="https://docs.uopensail.com/blog/RecGo%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E4%BC%98%E5%8C%96%EF%BC%9A%E5%8C%96%E9%9B%B6%E4%B8%BA%E6%95%B4%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5#%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90%E5%B0%8F%E5%AF%B9%E8%B1%A1%E5%BC%95%E5%8F%91%E7%9A%84gc%E9%A3%8E%E6%9A%B4" class="hash-link" aria-label="问题分析：小对象引发的GC风暴的直接链接" title="问题分析：小对象引发的GC风暴的直接链接">​</a></h2>
+<p>数据规模与内存特征</p>
+<p>在千万级物料场景下，每个物料包含50-100个异构特征，具体构成如下：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>特征类型</th><th style="text-align:right">内存占比</th><th style="text-align:right">平均内存占用</th></tr></thead><tbody><tr><td></td><td style="text-align:right"></td><td style="text-align:right"></td></tr><tr><td>int64</td><td style="text-align:right">25%</td><td style="text-align:right">8 B</td></tr><tr><td>float32</td><td style="text-align:right">20%</td><td style="text-align:right">4 B</td></tr><tr><td>string</td><td style="text-align:right">30%</td><td style="text-align:right">32 B</td></tr><tr><td>[]int64</td><td style="text-align:right">15%</td><td style="text-align:right">128 B</td></tr><tr><td>[]float32</td><td style="text-align:right">5%</td><td style="text-align:right">64 B</td></tr><tr><td>[]string</td><td style="text-align:right">5%</td><td style="text-align:right">256 B</td></tr></tbody></table>
+<p>每次全量更新物料池会生成约1.2亿个内存对象，其中90%的对象大小小于512字节。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="gc性能瓶颈实测">GC性能瓶颈实测<a href="https://docs.uopensail.com/blog/RecGo%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E4%BC%98%E5%8C%96%EF%BC%9A%E5%8C%96%E9%9B%B6%E4%B8%BA%E6%95%B4%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5#gc%E6%80%A7%E8%83%BD%E7%93%B6%E9%A2%88%E5%AE%9E%E6%B5%8B" class="hash-link" aria-label="GC性能瓶颈实测的直接链接" title="GC性能瓶颈实测的直接链接">​</a></h3>
+<p>在Go 1.21环境下进行压力测试，得到以下关键指标：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>指标</th><th style="text-align:right">常规分配</th><th style="text-align:right">Arena方案</th></tr></thead><tbody><tr><td>GC暂停时间（P99）</td><td style="text-align:right">420ms</td><td style="text-align:right">8ms</td></tr><tr><td>内存分配次数/s</td><td style="text-align:right">5.2M</td><td style="text-align:right">0.8M</td></tr><tr><td>内存碎片率</td><td style="text-align:right">38%</td><td style="text-align:right">4%</td></tr></tbody></table>
+<p>测试结果显示，高频小对象分配导致GC工作负载激增，在业务高峰期频繁触发GC STW（Stop-The-World），严重影响服务稳定性。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="解决方案选型与技术论证">解决方案选型与技术论证<a href="https://docs.uopensail.com/blog/RecGo%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E4%BC%98%E5%8C%96%EF%BC%9A%E5%8C%96%E9%9B%B6%E4%B8%BA%E6%95%B4%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E9%80%89%E5%9E%8B%E4%B8%8E%E6%8A%80%E6%9C%AF%E8%AE%BA%E8%AF%81" class="hash-link" aria-label="解决方案选型与技术论证的直接链接" title="解决方案选型与技术论证的直接链接">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cgo方案可行性分析">CGO方案可行性分析<a href="https://docs.uopensail.com/blog/RecGo%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E4%BC%98%E5%8C%96%EF%BC%9A%E5%8C%96%E9%9B%B6%E4%B8%BA%E6%95%B4%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5#cgo%E6%96%B9%E6%A1%88%E5%8F%AF%E8%A1%8C%E6%80%A7%E5%88%86%E6%9E%90" class="hash-link" aria-label="CGO方案可行性分析的直接链接" title="CGO方案可行性分析的直接链接">​</a></h3>
+<p>初步设想采用C++实现特征管理模块，通过CGO桥接。性能测试可以参考网页
+<a href="https://shane.ai/posts/cgo-performance-in-go1.21/" target="_blank" rel="noopener noreferrer">CGO Performance In Go 1.21</a></p>
+<blockquote>
+<p>Conclusions<br>
+So at this point we’ve measured performance overhead of Cgo, at least in terms of wall clock time (note that we haven’t looked at memory/thread count/battery usage/etc). We know that the overhead is on the order of 2 mutex operations and that it does scale with number of cores up to around 16. We’ve also seen that with 16 cores we can do around 4ns/op or close to 250 million Cgo ops/s. So if I was looking at using Cgo in 2023 I’d definitely use it outside of very hot loops. There’s many reasons I wouldn’t use Cgo in 2023 (see disclaimer), but performance is unlikely to be one of them.<br>
+I’ll end with this little Cgo version of “latency numbers every programmer should know” table:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Go/Cgo latency</th><th style="text-align:right"></th><th style="text-align:right"></th></tr></thead><tbody><tr><td>Benchmark Name</td><td style="text-align:right">1 Core</td><td style="text-align:right">16 Cores</td></tr><tr><td>Inlined Empty func</td><td style="text-align:right">0.271 ns</td><td style="text-align:right">0.02489 ns</td></tr><tr><td>Empty func</td><td style="text-align:right">1.5 ns</td><td style="text-align:right">0.135 ns</td></tr><tr><td>cgo</td><td style="text-align:right">40 ns</td><td style="text-align:right">4.281 ns</td></tr><tr><td>encoding/json int parse</td><td style="text-align:right">52.89 ns</td><td style="text-align:right">5.518 ns</td></tr></tbody></table>
+</blockquote>
+<p>基于上面的测试结果，我们认为特征存储使用cgo是不太合适的，因为特征的读取非常频繁。即在量级非常大的时候，频繁进行栈切换会导致耗时增加，影响整体性能。因此，我们最终没有选择这个方案。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="arena内存池化方案">Arena内存池化方案<a href="https://docs.uopensail.com/blog/RecGo%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E4%BC%98%E5%8C%96%EF%BC%9A%E5%8C%96%E9%9B%B6%E4%B8%BA%E6%95%B4%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5#arena%E5%86%85%E5%AD%98%E6%B1%A0%E5%8C%96%E6%96%B9%E6%A1%88" class="hash-link" aria-label="Arena内存池化方案的直接链接" title="Arena内存池化方案的直接链接">​</a></h3>
+<p>基于物料池只读特性，我们创新性地提出以下设计原则：</p>
+<ol>
+<li>连续内存分配‌：预分配大块内存（4KB pages）</li>
+<li>对象生命周期绑定‌：特征对象与所属物料池同生命周期</li>
+<li>批量释放机制‌：物料池更新时整块释放内存</li>
+</ol>
+<p>架构对比示意图：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">传统方案：</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[obj1][padding][obj2][obj3][padding]... -&gt; 内存碎片</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Arena方案：</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[page1: obj1|obj2|obj3...][page2: obj4|obj5...] -&gt; 连续内存</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="实现细节与核心算法">实现细节与核心算法<a href="https://docs.uopensail.com/blog/RecGo%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E4%BC%98%E5%8C%96%EF%BC%9A%E5%8C%96%E9%9B%B6%E4%B8%BA%E6%95%B4%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5#%E5%AE%9E%E7%8E%B0%E7%BB%86%E8%8A%82%E4%B8%8E%E6%A0%B8%E5%BF%83%E7%AE%97%E6%B3%95" class="hash-link" aria-label="实现细节与核心算法的直接链接" title="实现细节与核心算法的直接链接">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="内存分配器设计">内存分配器设计<a href="https://docs.uopensail.com/blog/RecGo%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E4%BC%98%E5%8C%96%EF%BC%9A%E5%8C%96%E9%9B%B6%E4%B8%BA%E6%95%B4%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5#%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E5%99%A8%E8%AE%BE%E8%AE%A1" class="hash-link" aria-label="内存分配器设计的直接链接" title="内存分配器设计的直接链接">​</a></h4>
+<div class="language-go codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-go codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    pageSize       </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">4096</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">// 4KB对齐现代CPU缓存行</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    maxSmallAlloc  </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">512</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">// 小对象阈值</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">type</span><span class="token plain"> Arena </span><span class="token keyword" style="color:#00009f">struct</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    mu     sync</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">RWMutex</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    pages  </span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token builtin">byte</span><span class="token plain">       </span><span class="token comment" style="color:#999988;font-style:italic">// 内存页池</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    curPtr </span><span class="token builtin">uintptr</span><span class="token plain">        </span><span class="token comment" style="color:#999988;font-style:italic">// 当前页偏移量</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    curCap </span><span class="token builtin">int</span><span class="token plain">            </span><span class="token comment" style="color:#999988;font-style:italic">// 当前页剩余容量</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// 分配算法伪代码</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">func</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">a </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">Arena</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">Alloc</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">size</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> align </span><span class="token builtin">uintptr</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token builtin">byte</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    a</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">mu</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">Lock</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">defer</span><span class="token plain"> a</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">mu</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">Unlock</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">// 计算对齐偏移</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    offset </span><span class="token operator" style="color:#393A34">:=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">a</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">curPtr </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> align </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&amp;^</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">align </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> size </span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> maxSmallAlloc </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> a</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">allocLarge</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">size</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> offset</span><span class="token operator" style="color:#393A34">+</span><span class="token plain">size </span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> a</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">curCap </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        a</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">newPage</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        offset </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> a</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">curPtr</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ptr </span><span class="token operator" style="color:#393A34">:=</span><span class="token plain"> a</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">pages</span><span class="token punctuation" style="color:#393A34">[</span><span class="token function" style="color:#d73a49">len</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">a</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">pages</span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">offset </span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> offset</span><span class="token operator" style="color:#393A34">+</span><span class="token plain">size</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    a</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">curPtr </span><span class="token operator" style="color:#393A34">+=</span><span class="token plain"> size</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> ptr</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="复杂类型序列化方案">复杂类型序列化方案<a href="https://docs.uopensail.com/blog/RecGo%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E4%BC%98%E5%8C%96%EF%BC%9A%E5%8C%96%E9%9B%B6%E4%B8%BA%E6%95%B4%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5#%E5%A4%8D%E6%9D%82%E7%B1%BB%E5%9E%8B%E5%BA%8F%E5%88%97%E5%8C%96%E6%96%B9%E6%A1%88" class="hash-link" aria-label="复杂类型序列化方案的直接链接" title="复杂类型序列化方案的直接链接">​</a></h4>
+<p>以[]string类型为例，内存布局实现：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">+-----------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| sliceHeader (24B)     |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|   Data *stringHeader  |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|   Len  int            |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|   Cap  int            |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+-----------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| stringHeader (16B)    |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|   Data *byte          |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|   Len  int            |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+-----------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| stringHeader          |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">|   ...                 |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+-----------------------+</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| 实际字符串数据区       |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">| "value1"|"value2"|... |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">+-----------------------+</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>序列化步骤：</p>
+<ol>
+<li>预计算总内存需求（包含所有对齐填充）</li>
+<li>分配连续内存块</li>
+<li>按序写入实际字符串数据</li>
+<li>构建stringHeader数组</li>
+<li>初始化sliceHeader</li>
+</ol>
+<div class="language-go codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-go codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">// 伪代码</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">func</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">MarshalStrings</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arena </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">Arena</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> values </span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token builtin">string</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token builtin">string</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">// 1. 计算总需求</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    total </span><span class="token operator" style="color:#393A34">:=</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">len</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">values</span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">*</span><span class="token number" style="color:#36acaa">16</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">24</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">// 头部空间</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">_</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> s </span><span class="token operator" style="color:#393A34">:=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">range</span><span class="token plain"> values </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        total </span><span class="token operator" style="color:#393A34">+=</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">len</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">s</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">// 2. 分配内存</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    buf </span><span class="token operator" style="color:#393A34">:=</span><span class="token plain"> arena</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">Alloc</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">total</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">8</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">// 3. 写入字符串内容</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">// ...（细节省略）</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">// 4. 构建string headers</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">// ...（细节省略）</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token punctuation" style="color:#393A34">(</span><span class="token operator" style="color:#393A34">*</span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token builtin">string</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">unsafe</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">Pointer</span><span class="token punctuation" style="color:#393A34">(</span><span class="token operator" style="color:#393A34">&amp;</span><span class="token plain">sliceHeader</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Application of DeepFM Model in AppS]]></title>
         <id>https://docs.uopensail.com/blog/AppS/DeepFM</id>
         <link href="https://docs.uopensail.com/blog/AppS/DeepFM"/>
-        <updated>2025-03-22T09:04:18.000Z</updated>
+        <updated>2025-03-26T00:40:13.000Z</updated>
         <summary type="html"><![CDATA[In the field of recommendation systems, efficiently combining low-order and high-order feature interactions to improve prediction accuracy has always been a key challenge. The DeepFM model offers a solution that combines memory capacity and generalization ability by integrating Factorization Machines (FM) with Deep Neural Networks (DNN). This article will introduce the application and effectiveness of DeepFM in the AppS business.]]></summary>
         <content type="html"><![CDATA[<p>In the field of recommendation systems, efficiently combining low-order and high-order feature interactions to improve prediction accuracy has always been a key challenge. The DeepFM model offers a solution that combines memory capacity and generalization ability by integrating Factorization Machines (FM) with Deep Neural Networks (DNN). This article will introduce the application and effectiveness of DeepFM in the AppS business.</p>
 <center>
@@ -78,7 +298,7 @@
         <title type="html"><![CDATA[Application of the ESMM Model in AppS]]></title>
         <id>https://docs.uopensail.com/blog/AppS/ESMM</id>
         <link href="https://docs.uopensail.com/blog/AppS/ESMM"/>
-        <updated>2025-03-22T09:04:18.000Z</updated>
+        <updated>2025-03-26T00:40:13.000Z</updated>
         <summary type="html"><![CDATA[In modern recommendation systems, particularly within the AppS business environment, predicting user behaviors such as Click-Through Rate (CTR) and Conversion Rate (CVR) is crucial for enhancing user satisfaction and driving business growth. The ESMM model, with its unique architecture and efficient multi-task learning capability, offers an outstanding solution for the AppS business.]]></summary>
         <content type="html"><![CDATA[<p>In modern recommendation systems, particularly within the AppS business environment, predicting user behaviors such as Click-Through Rate (CTR) and Conversion Rate (CVR) is crucial for enhancing user satisfaction and driving business growth. The ESMM model, with its unique architecture and efficient multi-task learning capability, offers an outstanding solution for the AppS business.</p>
 <center>
@@ -148,7 +368,7 @@
         <title type="html"><![CDATA[Application of FM Model in AppS]]></title>
         <id>https://docs.uopensail.com/blog/AppS/FM</id>
         <link href="https://docs.uopensail.com/blog/AppS/FM"/>
-        <updated>2025-03-22T09:04:18.000Z</updated>
+        <updated>2025-03-26T00:40:13.000Z</updated>
         <summary type="html"><![CDATA[Introduction]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://docs.uopensail.com/blog/AppS/FM#introduction" class="hash-link" aria-label="Introduction的直接链接" title="Introduction的直接链接">​</a></h2>
 <p>Factorization Machines (FM) are powerful machine learning models, especially widely used in recommendation systems and advertising click-through rate prediction. FM models can effectively capture the cross information between features and are highly efficient and easy to implement in engineering.</p>
@@ -207,7 +427,7 @@
         <title type="html"><![CDATA[Application of the MMOE Model in AppS]]></title>
         <id>https://docs.uopensail.com/blog/AppS/MMOE</id>
         <link href="https://docs.uopensail.com/blog/AppS/MMOE"/>
-        <updated>2025-03-22T09:04:18.000Z</updated>
+        <updated>2025-03-26T00:40:13.000Z</updated>
         <summary type="html"><![CDATA[In the AppS business, recommendation systems need not only to improve user Click-Through Rate (CTR) but also to enhance Conversion Rate (CVR) to achieve comprehensive user engagement and business growth. The Multi-gate Mixture-of-Experts (MMOE) model offers an efficient solution by simultaneously optimizing multiple objectives to meet these business needs.]]></summary>
         <content type="html"><![CDATA[<p>In the AppS business, recommendation systems need not only to improve user Click-Through Rate (CTR) but also to enhance Conversion Rate (CVR) to achieve comprehensive user engagement and business growth. The Multi-gate Mixture-of-Experts (MMOE) model offers an efficient solution by simultaneously optimizing multiple objectives to meet these business needs.</p>
 <center>
@@ -283,72 +503,10 @@ Multi-gate Mixture-of-Experts</a></p>
 <p><a href="https://www.yuan-meng.com/posts/mtml/" target="_blank" rel="noopener noreferrer">The Annotated Multi-Task Ranker: An MMoE Code Example</a></p>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[The One Epoch Phenomenon in Recommendation Algorithms]]></title>
-        <id>https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo</id>
-        <link href="https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo"/>
-        <updated>2025-03-22T09:04:18.000Z</updated>
-        <summary type="html"><![CDATA[In the field of Click-Through Rate (CTR) prediction and recommendation systems, the "ONE EPOCH phenomenon" refers to the overfitting phenomenon where deep models achieve optimal generalization performance after only one epoch of training, and continued training leads to a sharp decline in performance on the test set.]]></summary>
-        <content type="html"><![CDATA[<p>In the field of Click-Through Rate (CTR) prediction and recommendation systems, the "ONE EPOCH phenomenon" refers to the overfitting phenomenon where deep models achieve optimal generalization performance after only one epoch of training, and continued training leads to a sharp decline in performance on the test set.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="phenomenon-characteristics">Phenomenon Characteristics<a href="https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo#phenomenon-characteristics" class="hash-link" aria-label="Phenomenon Characteristics的直接链接" title="Phenomenon Characteristics的直接链接">​</a></h2>
-<ul>
-<li>Performance During Training‌</li>
-</ul>
-<p>The model reaches a peak AUC on the test set at the end of the first epoch, and performance rapidly declines after the start of the second epoch.
-Overfitting manifests as a continuous decrease in training loss, but validation set metrics (such as AUC) significantly deteriorate after one epoch.</p>
-<ul>
-<li>Relevance to Industrial Practice‌</li>
-</ul>
-<p>This phenomenon explains why many industrial-grade recommendation systems stop training after only one epoch of data, rather than following the multiple iterations typical of traditional deep learning.</p>
-<center>
-<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/one-epoch-1.png" alt="" width="268" data-align="center" class="img_ev3q">
-<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/one-epoch-2.png" alt="" width="261" data-align="center" class="img_ev3q">
-</center>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-causes">Key Causes<a href="https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo#key-causes" class="hash-link" aria-label="Key Causes的直接链接" title="Key Causes的直接链接">​</a></h2>
-<ul>
-<li>Feature Sparsity‌</li>
-</ul>
-<p><strong>The high number of IDs in feature domains</strong> (such as user IDs, product IDs) results in extremely low frequencies of occurrence for each ID, making the model prone to memorizing sparse samples rather than generalizing.
-The Embedding layer corresponding to sparse features overfits low-frequency IDs during multiple training epochs.</p>
-<ul>
-<li>Model Optimization Characteristics‌</li>
-</ul>
-<p><strong>Strong optimizers (such as Adam) and larger learning rates</strong> accelerate convergence, enabling the model to complete effective learning within one epoch, with subsequent training falling into local overfitting.
-Complex model structures (such as deep networks) with excessive capacity exacerbate the memorization of noise/sparse features.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="mitigation-strategies">Mitigation Strategies<a href="https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo#mitigation-strategies" class="hash-link" aria-label="Mitigation Strategies的直接链接" title="Mitigation Strategies的直接链接">​</a></h2>
-<ul>
-<li>Feature Engineering Optimization‌</li>
-</ul>
-<p>Reduce Sparsity‌: Merge low-frequency IDs, use default values to replace sparse IDs, reduce hash space.
-Dynamic Feature Filtering‌: Dynamically adjust the participation intensity of sparse features based on the training stage.</p>
-<ul>
-<li>Training Parameter Adjustment‌</li>
-</ul>
-<p>Limit Training Epochs‌: Force training to stop after only one epoch.
-Learning Rate Control‌: Use a smaller initial learning rate or a learning rate decay strategy.</p>
-<ul>
-<li>Model Structure Improvement‌</li>
-</ul>
-<p>Simplify the Embedding layer or introduce regularization (such as Dropout) to suppress overfitting.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="insights-from-industrial-practice">Insights from Industrial Practice<a href="https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo#insights-from-industrial-practice" class="hash-link" aria-label="Insights from Industrial Practice的直接链接" title="Insights from Industrial Practice的直接链接">​</a></h2>
-<ul>
-<li>Strong Correlation with Data Distribution‌</li>
-</ul>
-<p>This phenomenon is particularly significant in high-sparsity business scenarios (such as advertising recommendations, e-commerce CTR prediction), but rarely occurs in dense data tasks.</p>
-<ul>
-<li>Priority of Optimization Directions‌</li>
-</ul>
-<p>The industrial community tends to directly avoid the problem through feature engineering and early stopping strategies, rather than modifying the model structure.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="theoretical-hypotheses">Theoretical Hypotheses<a href="https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo#theoretical-hypotheses" class="hash-link" aria-label="Theoretical Hypotheses的直接链接" title="Theoretical Hypotheses的直接链接">​</a></h2>
-<p>Some studies suggest that the ONE EPOCH phenomenon may stem from the dynamic balance between sample memorization and generalization: in the first epoch, the model completes coarse-grained learning of key features, and subsequent training disrupts generalization ability due to over-refinement of local features.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="further-reading">Further Reading<a href="https://docs.uopensail.com/blog/AppS/OneEpochInRecAlgo#further-reading" class="hash-link" aria-label="Further Reading的直接链接" title="Further Reading的直接链接">​</a></h2>
-<p><a href="https://arxiv.org/pdf/2209.06053" target="_blank" rel="noopener noreferrer">Towards Understanding the Overfitting Phenomenon of Deep Click-Through Rate Prediction Models</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/669063912" target="_blank" rel="noopener noreferrer">Ali's OneEpoch VS KuaiShou's MultiEpoch</a></p>]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Applicaton Store(AppS) Introduction]]></title>
         <id>https://docs.uopensail.com/blog/AppS/intro</id>
         <link href="https://docs.uopensail.com/blog/AppS/intro"/>
-        <updated>2025-03-22T09:04:18.000Z</updated>
+        <updated>2025-03-26T00:40:13.000Z</updated>
         <summary type="html"><![CDATA[Apps functions as a digital distribution platform similar to Apple's AppStore or Google Play, focusing on providing users with a variety of applications and games. Our primary key performance indicator is the number of user downloads and installations, which directly reflects the platform's usage and user satisfaction.]]></summary>
         <content type="html"><![CDATA[<p>Apps functions as a digital distribution platform similar to Apple's AppStore or Google Play, focusing on providing users with a variety of applications and games. Our primary key performance indicator is the number of user downloads and installations, which directly reflects the platform's usage and user satisfaction.</p>
 <img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/appstore.jpg" alt="" width="476" data-align="center" class="img_ev3q">
