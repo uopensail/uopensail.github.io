@@ -4,7 +4,7 @@
         <title>RecGo Blog</title>
         <link>https://docs.uopensail.com/blog</link>
         <description>RecGo Blog</description>
-        <lastBuildDate>Thu, 27 Mar 2025 15:04:05 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 28 Mar 2025 00:15:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[The One Epoch Phenomenon in Recommendation Algorithms]]></title>
             <link>https://docs.uopensail.com/blog/OneEpochInRecAlgo</link>
             <guid>https://docs.uopensail.com/blog/OneEpochInRecAlgo</guid>
-            <pubDate>Thu, 27 Mar 2025 15:04:05 GMT</pubDate>
+            <pubDate>Fri, 28 Mar 2025 00:15:33 GMT</pubDate>
             <description><![CDATA[In the field of Click-Through Rate (CTR) prediction and recommendation systems, the "ONE EPOCH phenomenon" refers to the overfitting phenomenon where deep models achieve optimal generalization performance after only one epoch of training, and continued training leads to a sharp decline in performance on the test set.]]></description>
             <content:encoded><![CDATA[<p>In the field of Click-Through Rate (CTR) prediction and recommendation systems, the "ONE EPOCH phenomenon" refers to the overfitting phenomenon where deep models achieve optimal generalization performance after only one epoch of training, and continued training leads to a sharp decline in performance on the test set.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="phenomenon-characteristics">Phenomenon Characteristics<a href="https://docs.uopensail.com/blog/OneEpochInRecAlgo#phenomenon-characteristics" class="hash-link" aria-label="Phenomenon Characteristics的直接链接" title="Phenomenon Characteristics的直接链接">​</a></h2>
@@ -74,7 +74,7 @@ Learning Rate Control‌: Use a smaller initial learning rate or a learning rate
             <title><![CDATA[RecGo 如何实现内存管理优化：化零为整的工程实践]]></title>
             <link>https://docs.uopensail.com/blog/RecGo 如何实现内存管理优化：化零为整的工程实践</link>
             <guid>https://docs.uopensail.com/blog/RecGo 如何实现内存管理优化：化零为整的工程实践</guid>
-            <pubDate>Thu, 27 Mar 2025 15:04:05 GMT</pubDate>
+            <pubDate>Fri, 28 Mar 2025 00:15:33 GMT</pubDate>
             <description><![CDATA[概述]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="概述">概述<a href="https://docs.uopensail.com/blog/RecGo%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E4%BC%98%E5%8C%96%EF%BC%9A%E5%8C%96%E9%9B%B6%E4%B8%BA%E6%95%B4%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5#%E6%A6%82%E8%BF%B0" class="hash-link" aria-label="概述的直接链接" title="概述的直接链接">​</a></h2>
 <p>在RecGo推荐系统的核心架构中，物料特征的内存管理一直是性能优化的重点（详见《RecGo特征系统设计原理》）。我们采用内存驻留方案实现了亚毫秒级特征访问，但在实际落地过程中发现了新的挑战：动态加载海量物料特征时，频繁创建的内存碎片对象导致Go GC出现严重性能瓶颈。本文将深入解析我们如何通过创新内存分配方案彻底解决该问题。</p>
@@ -232,7 +232,7 @@ I’ll end with this little Cgo version of “latency numbers every programmer s
             <title><![CDATA[倒排召回系统设计]]></title>
             <link>https://docs.uopensail.com/blog/倒排召回的设计</link>
             <guid>https://docs.uopensail.com/blog/倒排召回的设计</guid>
-            <pubDate>Thu, 27 Mar 2025 15:04:05 GMT</pubDate>
+            <pubDate>Fri, 28 Mar 2025 00:15:33 GMT</pubDate>
             <description><![CDATA[倒排索引]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="倒排索引">倒排索引<a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#%E5%80%92%E6%8E%92%E7%B4%A2%E5%BC%95" class="hash-link" aria-label="倒排索引的直接链接" title="倒排索引的直接链接">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="基本定义">基本定义<a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#%E5%9F%BA%E6%9C%AC%E5%AE%9A%E4%B9%89" class="hash-link" aria-label="基本定义的直接链接" title="基本定义的直接链接">​</a></h3>
@@ -259,11 +259,16 @@ I’ll end with this little Cgo version of “latency numbers every programmer s
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="i2iitem-to-item-eg-icf召回">I2I(Item-To-Item, e.g: ICF)召回<a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#i2iitem-to-item-eg-icf%E5%8F%AC%E5%9B%9E" class="hash-link" aria-label="I2I(Item-To-Item, e.g: ICF)召回的直接链接" title="I2I(Item-To-Item, e.g: ICF)召回的直接链接">​</a></h4>
 <ul>
 <li>
-<p><strong>核心逻辑</strong>：</p>
+<p><strong>核心逻辑</strong>：
+通过用户历史交互物品作为初始查询种子，触发多阶段召回过程。首先获取用户近期有过交互行为的物品集合作为初始查询键，随后基于预构建的物品相似度矩阵进行近邻扩展，获取与种子物品最相关的候选物品集合。在工程实现层面，典型的i2i召回系统会采用并行查询架构，将用户的历史物品集合分片后并发查询相似矩阵，最后通过聚合算子（轮转式去重合并）合并各分片的召回结果，形成最终的候选物品集合。</p>
+</li>
+<li>
+<p>深度阅读可以参考下面的网页：</p>
 <ul>
-<li>以用户历史交互物品为查询种子</li>
-<li>通过预计算的物品相似矩阵扩展候选集</li>
-<li>典型实现包含并行查询与结果聚合</li>
+<li><a href="https://www.geeksforgeeks.org/collaborative-filtering-ml/" target="_blank" rel="noopener noreferrer">Collaborative Filtering in Machine Learning</a></li>
+<li><a href="https://www.ibm.com/think/topics/collaborative-filtering" target="_blank" rel="noopener noreferrer">How collaborative filtering works</a></li>
+<li><a href="https://mlarchive.com/machine-learning/collaborative-filtering-recommendation-system/" target="_blank" rel="noopener noreferrer">Collaborative Filtering Recommendation System</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/653379602" target="_blank" rel="noopener noreferrer">一文说尽协同过滤算法中的相似度计算</a></li>
 </ul>
 </li>
 <li>
@@ -271,46 +276,49 @@ I’ll end with this little Cgo version of “latency numbers every programmer s
 </li>
 </ul>
 <div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">"key"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"item_sim_123"</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">// 商品123的相似列表</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token property" style="color:#36acaa">"value"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">{</span><span class="token property" style="color:#36acaa">"456"</span><span class="token operator" style="color:#393A34">:</span><span class="token number" style="color:#36acaa">0.85</span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token property" style="color:#36acaa">"789"</span><span class="token operator" style="color:#393A34">:</span><span class="token number" style="color:#36acaa">0.76</span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain">...</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">// 按相似度降序存储</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="多模态兴趣召回">多模态兴趣召回<a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#%E5%A4%9A%E6%A8%A1%E6%80%81%E5%85%B4%E8%B6%A3%E5%8F%AC%E5%9B%9E" class="hash-link" aria-label="多模态兴趣召回的直接链接" title="多模态兴趣召回的直接链接">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="用户画像召回">用户画像召回<a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%E5%8F%AC%E5%9B%9E" class="hash-link" aria-label="用户画像召回的直接链接" title="用户画像召回的直接链接">​</a></h4>
 <ul>
-<li><strong>执行流程</strong>：
-<ol>
-<li>特征分层解析：
-<ul>
-<li>时序特征：会话级/天级/月级行为</li>
-<li>维度特征：品类/价格带/内容标签</li>
+<li><strong>核心逻辑</strong></li>
 </ul>
-</li>
-<li>动态键值构造（如"品类_时段_频次"）</li>
-</ol>
-</li>
-</ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="实时动态召回">实时动态召回<a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#%E5%AE%9E%E6%97%B6%E5%8A%A8%E6%80%81%E5%8F%AC%E5%9B%9E" class="hash-link" aria-label="实时动态召回的直接链接" title="实时动态召回的直接链接">​</a></h4>
-<ul>
-<li><strong>更新策略</strong>：
-<ul>
-<li>时间衰减热度计算（滑动窗口统计）</li>
-<li>空间维度分层（地理围栏/城市分级）</li>
-<li>设备特征融合（品牌/操作系统/分辨率）</li>
-</ul>
-</li>
-</ul>
+<p>用户画像的核心在于标签化，即通过标签体系对用户特征进行结构化表征，从而更精确地刻画用户属性。兴趣标签仅是其中一种维度，完整的用户画像通常涵盖自然属性（如年龄、性别）、社会属性（如职业、地域）、业务属性（如消费频次、客单价）、设备属性（如终端型号、操作系统）等多个方面。在构建用户画像标签体系后，用户画像标签作为查询键检索倒排索引，实现从特征到候选集的精准召回。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="总结">总结<a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#%E6%80%BB%E7%BB%93" class="hash-link" aria-label="总结的直接链接" title="总结的直接链接">​</a></h3>
-<p>上述的召回，其实本质上就是基于用户特征生成查询键，然后再到倒排索引中去查询。因此才有了我们下面的设计。</p>
+<p>上述召回过程的核心机制是通过用户特征生成查询键，进而检索倒排索引。基于这一原理，我们设计了以下方案。</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="系统架构设计">系统架构设计<a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1" class="hash-link" aria-label="系统架构设计的直接链接" title="系统架构设计的直接链接">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="核心处理流水线">核心处理流水线<a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#%E6%A0%B8%E5%BF%83%E5%A4%84%E7%90%86%E6%B5%81%E6%B0%B4%E7%BA%BF" class="hash-link" aria-label="核心处理流水线的直接链接" title="核心处理流水线的直接链接">​</a></h3>
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="关键组件说明">关键组件说明<a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#%E5%85%B3%E9%94%AE%E7%BB%84%E4%BB%B6%E8%AF%B4%E6%98%8E" class="hash-link" aria-label="关键组件说明的直接链接" title="关键组件说明的直接链接">​</a></h3>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="查询键生成minia">查询键生成:<a href="https://github.com/uopensail/minia" target="_blank" rel="noopener noreferrer">minia</a><a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#%E6%9F%A5%E8%AF%A2%E9%94%AE%E7%94%9F%E6%88%90minia" class="hash-link" aria-label="查询键生成minia的直接链接" title="查询键生成minia的直接链接">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="查询键生成工具minia">查询键生成工具:<a href="https://github.com/uopensail/minia" target="_blank" rel="noopener noreferrer">Minia</a><a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#%E6%9F%A5%E8%AF%A2%E9%94%AE%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7minia" class="hash-link" aria-label="查询键生成工具minia的直接链接" title="查询键生成工具minia的直接链接">​</a></h4>
+<p>Minia 是一个高效的 C++ 特征处理库，专注于通过表达式驱动的方式实现一致且灵活的特征转换。用户只需在配置文件中定义表达式规则，即可自动应用于召回、模型训练和推理等，确保数据处理逻辑严格一致，避免特征偏差。</p>
 <ul>
-<li><strong>功能特性</strong>：
-<ul>
-<li>支持DSL配置化规则</li>
-<li>实时处理</li>
-</ul>
+<li>
+<p>核心优势：表达式处理
+自定义表达式语法：基于 ANTLR 实现，支持复杂数学、统计、字符串及日期运算（如 sqrt(x), bucket(age, [0,18,60])）。</p>
+</li>
+<li>
+<p>智能优化：自动进行常量折叠、公共子表达式消除等优化，减少冗余计算，提升执行效率。</p>
+</li>
+<li>
+<p>动态类型转换：支持 cast() 等操作，灵活处理多类型数据（数值、向量、字符串等）。</p>
+</li>
+<li>
+<p>简洁配置，统一流程</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="蛇形合并">蛇形合并<a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#%E8%9B%87%E5%BD%A2%E5%90%88%E5%B9%B6" class="hash-link" aria-label="蛇形合并的直接链接" title="蛇形合并的直接链接">​</a></h4>
+<p>TOML 配置：通过声明式规则定义特征变换，如：</p>
+<div class="language-toml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-toml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[transform]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">expressions = ['user_gender_cat1 = concat(gender, cat1_prefer)']</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">features = ["user_gender_cat1"]</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="轮转式去重合并round-robin-merge">轮转式去重合并(Round Robin Merge)<a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#%E8%BD%AE%E8%BD%AC%E5%BC%8F%E5%8E%BB%E9%87%8D%E5%90%88%E5%B9%B6round-robin-merge" class="hash-link" aria-label="轮转式去重合并(Round Robin Merge)的直接链接" title="轮转式去重合并(Round Robin Merge)的直接链接">​</a></h4>
+<p>依次从各召回列表中选取元素，确保结果兼具多样性和有序性。</p>
+<ul>
+<li>
+<p>去重优先：自动跳过已存在元素，避免冗余。</p>
+</li>
+<li>
+<p>轮转均衡：按轮次平等分配各召回源的曝光机会，兼顾多样性。</p>
+</li>
+<li>
+<p>顺序保留：在全局去重基础上，尽量维持各列表内部排序。</p>
+</li>
+</ul>
 <p>假设有3个召回通道：</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">召回1: [A, B, C]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">召回2: [B, D]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">召回3: [A, E]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">合并过程：</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">1. 第一轮：</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回1取A</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回2取B </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回3取A(跳过，已存在)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   → 结果：[A, B]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">2. 第二轮：</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回1取B(跳过)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回2取D</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回3取E</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   → 结果：[A, B, D, E]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">3. 第三轮：</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回1取C</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回2已耗尽</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回3已耗尽</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   → 最终结果：[A, B, D, E, C]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content:encoded>
         </item>
@@ -318,7 +326,7 @@ I’ll end with this little Cgo version of “latency numbers every programmer s
             <title><![CDATA[Application of DeepFM Model in AppS]]></title>
             <link>https://docs.uopensail.com/blog/AppS/DeepFM</link>
             <guid>https://docs.uopensail.com/blog/AppS/DeepFM</guid>
-            <pubDate>Thu, 27 Mar 2025 15:04:05 GMT</pubDate>
+            <pubDate>Fri, 28 Mar 2025 00:15:33 GMT</pubDate>
             <description><![CDATA[In the field of recommendation systems, efficiently combining low-order and high-order feature interactions to improve prediction accuracy has always been a key challenge. The DeepFM model offers a solution that combines memory capacity and generalization ability by integrating Factorization Machines (FM) with Deep Neural Networks (DNN). This article will introduce the application and effectiveness of DeepFM in the AppS business.]]></description>
             <content:encoded><![CDATA[<p>In the field of recommendation systems, efficiently combining low-order and high-order feature interactions to improve prediction accuracy has always been a key challenge. The DeepFM model offers a solution that combines memory capacity and generalization ability by integrating Factorization Machines (FM) with Deep Neural Networks (DNN). This article will introduce the application and effectiveness of DeepFM in the AppS business.</p>
 <center>
@@ -385,7 +393,7 @@ I’ll end with this little Cgo version of “latency numbers every programmer s
             <title><![CDATA[Application of the ESMM Model in AppS]]></title>
             <link>https://docs.uopensail.com/blog/AppS/ESMM</link>
             <guid>https://docs.uopensail.com/blog/AppS/ESMM</guid>
-            <pubDate>Thu, 27 Mar 2025 15:04:05 GMT</pubDate>
+            <pubDate>Fri, 28 Mar 2025 00:15:33 GMT</pubDate>
             <description><![CDATA[In modern recommendation systems, particularly within the AppS business environment, predicting user behaviors such as Click-Through Rate (CTR) and Conversion Rate (CVR) is crucial for enhancing user satisfaction and driving business growth. The ESMM model, with its unique architecture and efficient multi-task learning capability, offers an outstanding solution for the AppS business.]]></description>
             <content:encoded><![CDATA[<p>In modern recommendation systems, particularly within the AppS business environment, predicting user behaviors such as Click-Through Rate (CTR) and Conversion Rate (CVR) is crucial for enhancing user satisfaction and driving business growth. The ESMM model, with its unique architecture and efficient multi-task learning capability, offers an outstanding solution for the AppS business.</p>
 <center>
@@ -455,7 +463,7 @@ I’ll end with this little Cgo version of “latency numbers every programmer s
             <title><![CDATA[Application of FM Model in AppS]]></title>
             <link>https://docs.uopensail.com/blog/AppS/FM</link>
             <guid>https://docs.uopensail.com/blog/AppS/FM</guid>
-            <pubDate>Thu, 27 Mar 2025 15:04:05 GMT</pubDate>
+            <pubDate>Fri, 28 Mar 2025 00:15:33 GMT</pubDate>
             <description><![CDATA[Introduction]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://docs.uopensail.com/blog/AppS/FM#introduction" class="hash-link" aria-label="Introduction的直接链接" title="Introduction的直接链接">​</a></h2>
 <p>Factorization Machines (FM) are powerful machine learning models, especially widely used in recommendation systems and advertising click-through rate prediction. FM models can effectively capture the cross information between features and are highly efficient and easy to implement in engineering.</p>
@@ -514,7 +522,7 @@ I’ll end with this little Cgo version of “latency numbers every programmer s
             <title><![CDATA[Application of the MMOE Model in AppS]]></title>
             <link>https://docs.uopensail.com/blog/AppS/MMOE</link>
             <guid>https://docs.uopensail.com/blog/AppS/MMOE</guid>
-            <pubDate>Thu, 27 Mar 2025 15:04:05 GMT</pubDate>
+            <pubDate>Fri, 28 Mar 2025 00:15:33 GMT</pubDate>
             <description><![CDATA[In the AppS business, recommendation systems need not only to improve user Click-Through Rate (CTR) but also to enhance Conversion Rate (CVR) to achieve comprehensive user engagement and business growth. The Multi-gate Mixture-of-Experts (MMOE) model offers an efficient solution by simultaneously optimizing multiple objectives to meet these business needs.]]></description>
             <content:encoded><![CDATA[<p>In the AppS business, recommendation systems need not only to improve user Click-Through Rate (CTR) but also to enhance Conversion Rate (CVR) to achieve comprehensive user engagement and business growth. The Multi-gate Mixture-of-Experts (MMOE) model offers an efficient solution by simultaneously optimizing multiple objectives to meet these business needs.</p>
 <center>
@@ -593,7 +601,7 @@ Multi-gate Mixture-of-Experts</a></p>
             <title><![CDATA[Applicaton Store(AppS) Introduction]]></title>
             <link>https://docs.uopensail.com/blog/AppS/intro</link>
             <guid>https://docs.uopensail.com/blog/AppS/intro</guid>
-            <pubDate>Thu, 27 Mar 2025 15:04:05 GMT</pubDate>
+            <pubDate>Fri, 28 Mar 2025 00:15:33 GMT</pubDate>
             <description><![CDATA[Apps functions as a digital distribution platform similar to Apple's AppStore or Google Play, focusing on providing users with a variety of applications and games. Our primary key performance indicator is the number of user downloads and installations, which directly reflects the platform's usage and user satisfaction.]]></description>
             <content:encoded><![CDATA[<p>Apps functions as a digital distribution platform similar to Apple's AppStore or Google Play, focusing on providing users with a variety of applications and games. Our primary key performance indicator is the number of user downloads and installations, which directly reflects the platform's usage and user satisfaction.</p>
 <img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/appstore.jpg" alt="" width="476" data-align="center" class="img_ev3q">
