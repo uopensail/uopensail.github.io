@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkuopensail_github_io=self.webpackChunkuopensail_github_io||[]).push([[4583],{6107:(e,s,t)=>{t.r(s),t.d(s,{default:()=>n});var u=t(6540),i=t(6347),o=t(4848);const n=()=>{const e=(0,i.W6)(),s=!0;return(0,u.useEffect)((()=>{window.location.href="https://www.uopensail.com"}),[s,e]),(0,o.jsx)("div",{})}}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkuopensail_github_io=self.webpackChunkuopensail_github_io||[]).push([[9720],{9720:(e,i,u)=>{u.d(i,{createArchitectureServices:()=>s.S});var s=u(9936);u(9369)}}]);
