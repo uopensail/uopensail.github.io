@@ -139,7 +139,24 @@ PATH:  /{project_id}/recommend/items
 **Request Body**:
 ```json
 {
-
+    "user_id":"用户id",
+    "device_id":"设备id",
+    "pageno":1,
+    "count":10,
+    "relate_item":"",
+    "trace_id":"trace_id",
+    "scene":"scene",
+    "pipeline":"pipeline",
+    "exclude_items":["item_id1","item_id2"],
+    "filter_condition":"",
+    "user_feature":{
+        "u_s_coutry":"us",
+        "u_s_age":1,
+        "u_s_gender":1,
+        "u_d_tags":["tag1","tag2"],
+        "u_d_embedding":[1.0,2.0,3.0],
+        "u_d_int_list":[1,2,3]
+    },
 }
 ```
 
