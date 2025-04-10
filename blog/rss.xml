@@ -4,7 +4,7 @@
         <title>RecGo Blog</title>
         <link>https://docs.uopensail.com/blog</link>
         <description>RecGo Blog</description>
-        <lastBuildDate>Tue, 08 Apr 2025 00:25:47 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 10 Apr 2025 00:17:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[The One Epoch Phenomenon in Recommendation Algorithms]]></title>
             <link>https://docs.uopensail.com/blog/OneEpochInRecAlgo</link>
             <guid>https://docs.uopensail.com/blog/OneEpochInRecAlgo</guid>
-            <pubDate>Tue, 08 Apr 2025 00:25:47 GMT</pubDate>
+            <pubDate>Thu, 10 Apr 2025 00:17:00 GMT</pubDate>
             <description><![CDATA[In the field of Click-Through Rate (CTR) prediction and recommendation systems, the "ONE EPOCH phenomenon" refers to the overfitting phenomenon where deep models achieve optimal generalization performance after only one epoch of training, and continued training leads to a sharp decline in performance on the test set.]]></description>
             <content:encoded><![CDATA[<p>In the field of Click-Through Rate (CTR) prediction and recommendation systems, the "ONE EPOCH phenomenon" refers to the overfitting phenomenon where deep models achieve optimal generalization performance after only one epoch of training, and continued training leads to a sharp decline in performance on the test set.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="phenomenon-characteristics">Phenomenon Characteristics<a href="https://docs.uopensail.com/blog/OneEpochInRecAlgo#phenomenon-characteristics" class="hash-link" aria-label="Direct link to Phenomenon Characteristics" title="Direct link to Phenomenon Characteristics">​</a></h2>
@@ -74,7 +74,7 @@ Learning Rate Control‌: Use a smaller initial learning rate or a learning rate
             <title><![CDATA[RecGo 如何实现内存管理优化：化零为整的工程实践]]></title>
             <link>https://docs.uopensail.com/blog/RecGo 如何实现内存管理优化：化零为整的工程实践</link>
             <guid>https://docs.uopensail.com/blog/RecGo 如何实现内存管理优化：化零为整的工程实践</guid>
-            <pubDate>Tue, 08 Apr 2025 00:25:47 GMT</pubDate>
+            <pubDate>Thu, 10 Apr 2025 00:17:00 GMT</pubDate>
             <description><![CDATA[概述]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="概述">概述<a href="https://docs.uopensail.com/blog/RecGo%20%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E4%BC%98%E5%8C%96%EF%BC%9A%E5%8C%96%E9%9B%B6%E4%B8%BA%E6%95%B4%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5#%E6%A6%82%E8%BF%B0" class="hash-link" aria-label="Direct link to 概述" title="Direct link to 概述">​</a></h2>
 <p>在RecGo推荐系统的核心架构中，物料特征的内存管理一直是性能优化的重点（详见《RecGo特征系统设计原理》）。我们采用内存驻留方案实现了亚毫秒级特征访问，但在实际落地过程中发现了新的挑战：动态加载海量物料特征时，频繁创建的内存碎片对象导致Go GC出现严重性能瓶颈。本文将深入解析我们如何通过创新内存分配方案彻底解决该问题。</p>
@@ -232,7 +232,7 @@ I’ll end with this little Cgo version of “latency numbers every programmer s
             <title><![CDATA[Tracing Data Origins and Causality: The "Element Tracing Method" in Recommendation Systems]]></title>
             <link>https://docs.uopensail.com/blog/trace-data-in-recsys</link>
             <guid>https://docs.uopensail.com/blog/trace-data-in-recsys</guid>
-            <pubDate>Tue, 08 Apr 2025 00:25:47 GMT</pubDate>
+            <pubDate>Thu, 10 Apr 2025 00:17:00 GMT</pubDate>
             <description><![CDATA[When studying biology in high school, teachers introduced the isotope labeling method to investigate how oxygen participates in complex biological processes.]]></description>
             <content:encoded><![CDATA[<p>When studying biology in high school, teachers introduced the&nbsp;<strong>isotope labeling method</strong>&nbsp;to investigate how oxygen participates in complex biological processes.</p>
 <p>Isotopes used to track substance movement and transformations are called&nbsp;<strong>tracer elements</strong>. By tracing compounds labeled with these elements, scientists can unravel intricate biochemical reactions. This methodology ensures that labeled compounds retain&nbsp;<strong>unchanged chemical properties</strong>&nbsp;while enabling&nbsp;<strong>high-sensitivity measurements, simplified positioning, and accurate quantification</strong>.</p>
@@ -296,7 +296,7 @@ Monitor real-time performance of multi-strategy systems, enabling rapid adjustme
             <title><![CDATA[倒排召回系统设计]]></title>
             <link>https://docs.uopensail.com/blog/倒排召回的设计</link>
             <guid>https://docs.uopensail.com/blog/倒排召回的设计</guid>
-            <pubDate>Tue, 08 Apr 2025 00:25:47 GMT</pubDate>
+            <pubDate>Thu, 10 Apr 2025 00:17:00 GMT</pubDate>
             <description><![CDATA[倒排索引]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="倒排索引">倒排索引<a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#%E5%80%92%E6%8E%92%E7%B4%A2%E5%BC%95" class="hash-link" aria-label="Direct link to 倒排索引" title="Direct link to 倒排索引">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="基本定义">基本定义<a href="https://docs.uopensail.com/blog/%E5%80%92%E6%8E%92%E5%8F%AC%E5%9B%9E%E7%9A%84%E8%AE%BE%E8%AE%A1#%E5%9F%BA%E6%9C%AC%E5%AE%9A%E4%B9%89" class="hash-link" aria-label="Direct link to 基本定义" title="Direct link to 基本定义">​</a></h3>
@@ -387,10 +387,402 @@ Monitor real-time performance of multi-strategy systems, enabling rapid adjustme
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">召回1: [A, B, C]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">召回2: [B, D]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">召回3: [A, E]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">合并过程：</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">1. 第一轮：</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回1取A</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回2取B </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回3取A(跳过，已存在)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   → 结果：[A, B]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">2. 第二轮：</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回1取B(跳过)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回2取D</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回3取E</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   → 结果：[A, B, D, E]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">3. 第三轮：</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回1取C</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回2已耗尽</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   - 召回3已耗尽</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   → 最终结果：[A, B, D, E, C]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[协同过滤相似度计算处理说明]]></title>
+            <link>https://docs.uopensail.com/blog/协同过滤相似度计算处理说明</link>
+            <guid>https://docs.uopensail.com/blog/协同过滤相似度计算处理说明</guid>
+            <pubDate>Thu, 10 Apr 2025 00:17:00 GMT</pubDate>
+            <description><![CDATA[一、环境准备]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="一环境准备">一、环境准备<a href="https://docs.uopensail.com/blog/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E7%9B%B8%E4%BC%BC%E5%BA%A6%E8%AE%A1%E7%AE%97%E5%A4%84%E7%90%86%E8%AF%B4%E6%98%8E#%E4%B8%80%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87" class="hash-link" aria-label="Direct link to 一、环境准备" title="Direct link to 一、环境准备">​</a></h2>
+<ol>
+<li>
+<p><strong>Python环境</strong></p>
+<ul>
+<li>
+<p>版本要求：Python ≥3.8</p>
+</li>
+<li>
+<p>推荐使用虚拟环境：</p>
+<div class="language-Python language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">python </span><span class="token operator" style="color:#393A34">-</span><span class="token plain">m venv cf_env</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">source cf_env</span><span class="token operator" style="color:#393A34">/</span><span class="token builtin">bin</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">activate  </span><span class="token comment" style="color:#999988;font-style:italic"># Linux/Mac</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cf_env\Scripts\activate     </span><span class="token comment" style="color:#999988;font-style:italic"># Windows</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>依赖安装</strong></p>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">pip install tomli multiprocess </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 仅Python&lt;3.11需要安装tomli</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="二配置文件准备">二、配置文件准备<a href="https://docs.uopensail.com/blog/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E7%9B%B8%E4%BC%BC%E5%BA%A6%E8%AE%A1%E7%AE%97%E5%A4%84%E7%90%86%E8%AF%B4%E6%98%8E#%E4%BA%8C%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%87%86%E5%A4%87" class="hash-link" aria-label="Direct link to 二、配置文件准备" title="Direct link to 二、配置文件准备">​</a></h2>
+<ol>
+<li>
+<p><strong>创建<code>config.toml</code>文件</strong></p>
+<div class="language-toml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-toml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[io]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">input_path = "input/interactions.csv"  # 原始交互数据路径</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">output_base = "output"                # 输出目录根路径</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">item_ids_path = "input/valid_items.txt" # 有效物品ID列表</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">keep_intermediate = false             # 是否保留中间文件</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[params]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">min_items = 2        # 最小交互物品数</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">max_items = 100      # 最大交互物品数</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">top_k = 20           # 生成推荐数量</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">num_workers = 8      # 并行进程数</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">min_cooccurrence = 1 # 共现最低次数</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">min_norm = 9         # 物品最少出现次数</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p><strong>输入文件结构</strong></p>
+<ul>
+<li>
+<p><strong>交互数据文件</strong>(interactions.txt)：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">itemA itemC itemD</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">itemB itemE</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">itemA itemB itemC</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p><strong>有效物品列表</strong>(valid_items.txt)：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">itemA</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">itemB</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">itemC</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="三执行流程">三、执行流程<a href="https://docs.uopensail.com/blog/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E7%9B%B8%E4%BC%BC%E5%BA%A6%E8%AE%A1%E7%AE%97%E5%A4%84%E7%90%86%E8%AF%B4%E6%98%8E#%E4%B8%89%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B" class="hash-link" aria-label="Direct link to 三、执行流程" title="Direct link to 三、执行流程">​</a></h2>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># 运行程序</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">python cf_similarity.py config.toml</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="处理阶段说明"><strong>处理阶段说明</strong><a href="https://docs.uopensail.com/blog/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E7%9B%B8%E4%BC%BC%E5%BA%A6%E8%AE%A1%E7%AE%97%E5%A4%84%E7%90%86%E8%AF%B4%E6%98%8E#%E5%A4%84%E7%90%86%E9%98%B6%E6%AE%B5%E8%AF%B4%E6%98%8E" class="hash-link" aria-label="Direct link to 处理阶段说明" title="Direct link to 处理阶段说明">​</a></h4>
+<ol>
+<li>
+<p><strong>阶段1：数据分片</strong></p>
+<ul>
+<li>输入：原始交互数据文件</li>
+<li>输出：<code>output/split/0.txt</code>,&nbsp;<code>output/split/1.txt</code>, ...</li>
+<li>特点：流式处理，内存占用恒定</li>
+</ul>
+</li>
+<li>
+<p><strong>阶段2：并行共现统计</strong></p>
+<ul>
+<li>每个工作进程处理一个分片文件</li>
+<li>生成中间文件：
+<ul>
+<li>共现计数：<code>output/intermediate/*/pairs.txt</code></li>
+<li>物品计数：<code>output/intermediate/*/norms.txt</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>阶段3：结果聚合</strong></p>
+<ul>
+<li>输出合并文件：
+<ul>
+<li><code>output/merged_pairs.txt</code>&nbsp;格式：<code>item1#item2\tcount</code></li>
+<li><code>output/merged_norms.txt</code>&nbsp;格式：<code>item\tcount</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>阶段4：相似度计算</strong></p>
+<ul>
+<li>计算余弦相似度：<code>sim(i,j) = cooccur(i,j) / sqrt(count(i)*count(j))</code></li>
+<li>生成内存数据结构：<code>{item: [(neighbor, score), ...]}</code></li>
+</ul>
+</li>
+<li>
+<p><strong>阶段5：推荐生成</strong></p>
+<ul>
+<li>
+<p>最终输出文件：<code>output/recommendations.txt</code></p>
+</li>
+<li>
+<p>格式示例：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">itemA    itemC:0.82,itemD:0.76,itemB:0.68</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">itemB    itemE:0.91,itemA:0.68,itemC:0.65</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="四输出文件说明">四、输出文件说明<a href="https://docs.uopensail.com/blog/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E7%9B%B8%E4%BC%BC%E5%BA%A6%E8%AE%A1%E7%AE%97%E5%A4%84%E7%90%86%E8%AF%B4%E6%98%8E#%E5%9B%9B%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E" class="hash-link" aria-label="Direct link to 四、输出文件说明" title="Direct link to 四、输出文件说明">​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>文件路径</th><th>内容</th><th>示例</th></tr></thead><tbody><tr><td><code>output/recommendations.txt</code></td><td>最终推荐结果</td><td><code>item\t邻居1:分数,邻居2:分数...</code></td></tr><tr><td><code>output/merged_pairs.txt</code></td><td>合并后的共现次数</td><td><code>itemA#itemB\t15</code></td></tr><tr><td><code>output/merged_norms.txt</code></td><td>物品出现总次数</td><td><code>itemA\t42</code></td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="五清理机制">五、清理机制<a href="https://docs.uopensail.com/blog/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E7%9B%B8%E4%BC%BC%E5%BA%A6%E8%AE%A1%E7%AE%97%E5%A4%84%E7%90%86%E8%AF%B4%E6%98%8E#%E4%BA%94%E6%B8%85%E7%90%86%E6%9C%BA%E5%88%B6" class="hash-link" aria-label="Direct link to 五、清理机制" title="Direct link to 五、清理机制">​</a></h2>
+<ol>
+<li>
+<p><strong>自动清理策略</strong>（默认开启）</p>
+<ul>
+<li>删除中间分片文件(<code>split/</code>)</li>
+<li>清除处理中间目录(<code>intermediate/</code>)</li>
+<li>移除合并的中间文件(<code>merged_*</code>)</li>
+</ul>
+</li>
+<li>
+<p><strong>保留中间文件</strong>&nbsp;配置文件中设置：<code>keep_intermediate = true</code></p>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="六性能调优建议"><strong>六、性能调优建议</strong><a href="https://docs.uopensail.com/blog/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E7%9B%B8%E4%BC%BC%E5%BA%A6%E8%AE%A1%E7%AE%97%E5%A4%84%E7%90%86%E8%AF%B4%E6%98%8E#%E5%85%AD%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98%E5%BB%BA%E8%AE%AE" class="hash-link" aria-label="Direct link to 六性能调优建议" title="Direct link to 六性能调优建议">​</a></h3>
+<ol>
+<li>
+<p><strong>并行度调整</strong></p>
+<ul>
+<li>根据CPU核心数设置<code>num_workers</code></li>
+<li>建议：CPU逻辑核心数 × 0.75</li>
+</ul>
+</li>
+<li>
+<p><strong>内存优化</strong></p>
+<ul>
+<li>
+<p>处理超大数据时（&gt;1亿条记录）：</p>
+<div class="language-toml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-toml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[params]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">min_cooccurrence = 2  # 提高共现阈值</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">min_norm = 10         # 过滤低频物品</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>分布式扩展</strong></p>
+<ul>
+<li>将分片文件分布到不同机器处理</li>
+<li>集中合并结果时使用分布式文件系统</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="七异常处理指南">七、异常处理指南<a href="https://docs.uopensail.com/blog/%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4%E7%9B%B8%E4%BC%BC%E5%BA%A6%E8%AE%A1%E7%AE%97%E5%A4%84%E7%90%86%E8%AF%B4%E6%98%8E#%E4%B8%83%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%8C%87%E5%8D%97" class="hash-link" aria-label="Direct link to 七、异常处理指南" title="Direct link to 七、异常处理指南">​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>异常现象</th><th>解决方案</th></tr></thead><tbody><tr><td>文件权限错误</td><td>检查输出目录可写权限</td></tr><tr><td>内存不足</td><td>降低<code>num_workers</code>或增加过滤阈值</td></tr><tr><td>无效物品ID</td><td>检查输入数据中的非空行和合法字符</td></tr><tr><td>共现矩阵为空</td><td>检查<code>min_items/max_items</code>是否过滤了所有记录</td></tr></tbody></table>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[深入解析AB测试：从分流原理到GrowthBook的最佳实践]]></title>
+            <link>https://docs.uopensail.com/blog/深入解析AB测试：从分流原理到GrowthBook的最佳实践</link>
+            <guid>https://docs.uopensail.com/blog/深入解析AB测试：从分流原理到GrowthBook的最佳实践</guid>
+            <pubDate>Thu, 10 Apr 2025 00:17:00 GMT</pubDate>
+            <description><![CDATA[1. AB测试简介]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-ab测试简介">1. AB测试简介<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#1-ab%E6%B5%8B%E8%AF%95%E7%AE%80%E4%BB%8B" class="hash-link" aria-label="Direct link to 1. AB测试简介" title="Direct link to 1. AB测试简介">​</a></h2>
+<p>AB测试（A/B Testing）是一种通过实验来验证改动是否有效的方法。它的核心在于将用户随机分配到不同的版本（如版本A和版本B），然后通过数据分析判断哪一个版本更符合预期目标。</p>
+<center>
+<img decoding="async" loading="lazy" src="https://docs.uopensail.com/static/images/AB-test-CVR.jpg" width="522" class="img_ev3q">
+</center>
+<p>AB测试的主要应用包括：</p>
+<ul>
+<li>优化界面设计（例如按钮颜色、布局等）。</li>
+<li>验证新功能或新算法的效果（例如推荐系统/算法改进）。</li>
+<li>提升业务指标（例如转化率、留存率等）。</li>
+</ul>
+<p>AB测试的流程：</p>
+<ol>
+<li><strong>明确目标</strong>：确定希望优化的核心指标。</li>
+<li><strong>设计实验</strong>：准备改动内容和实验组（A组、B组等）。</li>
+<li><strong>分流用户</strong>：以随机化方式将用户分配到不同版本。</li>
+<li><strong>数据收集</strong>：监测用户行为，记录相关指标。</li>
+<li><strong>结果分析</strong>：通过统计学方法判断实验组的表现是否显著优于对照组。</li>
+</ol>
+<p>AB测试的本质是以数据驱动决策，帮助团队避免依赖主观假设，确保改动的科学性。</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-用户分流的技术原理">2. 用户分流的技术原理<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#2-%E7%94%A8%E6%88%B7%E5%88%86%E6%B5%81%E7%9A%84%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86" class="hash-link" aria-label="Direct link to 2. 用户分流的技术原理" title="Direct link to 2. 用户分流的技术原理">​</a></h2>
+<p>用户分流是AB测试的关键环节，其目标是将用户随机分配到不同实验组，同时保证分配的公平性和一致性。分流的技术实现包括以下几种方法：</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="21-哈希函数分流">2.1 哈希函数分流<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#21-%E5%93%88%E5%B8%8C%E5%87%BD%E6%95%B0%E5%88%86%E6%B5%81" class="hash-link" aria-label="Direct link to 2.1 哈希函数分流" title="Direct link to 2.1 哈希函数分流">​</a></h3>
+<p>使用用户的唯一标识（如用户ID、Cookie或设备ID），通过哈希函数生成一个随机值，用于确定用户的分组。</p>
+<p>常见的哈希函数：</p>
+<ul>
+<li><strong>MD5</strong>：计算速度快，但加密安全性较低。</li>
+<li><strong>SHA-256</strong>：更安全，但计算成本较高，适用于敏感数据场景。</li>
+<li><strong>MurmurHash</strong>：高效且分布均匀，<strong>非常适合分流场景</strong>。</li>
+</ul>
+<p>分组逻辑示例：</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">group = hash(user_id) % group_count</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>通过取哈希值的余数将用户分配到不同组。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="22-伪随机数分流">2.2 伪随机数分流<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#22-%E4%BC%AA%E9%9A%8F%E6%9C%BA%E6%95%B0%E5%88%86%E6%B5%81" class="hash-link" aria-label="Direct link to 2.2 伪随机数分流" title="Direct link to 2.2 伪随机数分流">​</a></h3>
+<p>基于伪随机数生成器（如Python的<code>random</code>模块），生成一个范围在[0,1]之间的随机数，根据预设比例进行分组。例如，60%的用户进入实验组A，40%的用户进入实验组B。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="23-基于规则的分流">2.3 基于规则的分流<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#23-%E5%9F%BA%E4%BA%8E%E8%A7%84%E5%88%99%E7%9A%84%E5%88%86%E6%B5%81" class="hash-link" aria-label="Direct link to 2.3 基于规则的分流" title="Direct link to 2.3 基于规则的分流">​</a></h3>
+<p>按用户属性（如地理位置、设备类型、浏览器版本等）进行分流。例如：</p>
+<ul>
+<li>移动端用户进入A组。</li>
+<li>桌面端用户进入B组。</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="24-动态分流">2.4 动态分流<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#24-%E5%8A%A8%E6%80%81%E5%88%86%E6%B5%81" class="hash-link" aria-label="Direct link to 2.4 动态分流" title="Direct link to 2.4 动态分流">​</a></h3>
+<p>支持在实验进行中调整分流比例，适用于探索性实验或逐步放量实验。</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="核心原则">核心原则：<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#%E6%A0%B8%E5%BF%83%E5%8E%9F%E5%88%99" class="hash-link" aria-label="Direct link to 核心原则：" title="Direct link to 核心原则：">​</a></h4>
+<ol>
+<li><strong>随机性</strong>：确保分组的公平性。</li>
+<li><strong>一致性</strong>：用户在实验期间的分组保持不变（持久性）。</li>
+</ol>
+<hr>
+<h1>3. 实验层级的设计</h1>
+<p>实验层级是指AB测试中对不同测试范围的划分，帮助团队更好地组织和管理实验。根据实验的目标和范围，层级可以分为以下几种：</p>
+<ul>
+<li><strong>界面层（UI层）</strong>：测试界面设计的改动，例如按钮样式、页面布局等。</li>
+<li><strong>功能层</strong>：验证某一功能模块（如支付功能、推荐功能）的影响。</li>
+<li><strong>算法层</strong>：测试后端算法（如推荐排序、搜索优化）的改进效果。</li>
+<li><strong>业务逻辑层</strong>：测试更深层次的系统逻辑变化，例如价格模型或库存策略。</li>
+</ul>
+<p>通过合理的层级划分，可以提高实验的可控性，避免不同实验之间的干扰。</p>
+<center>
+<img decoding="async" loading="lazy" src="https://docs.uopensail.com/static/images/AB-testing-product.jpg" width="522" class="img_ev3q">
+<img decoding="async" loading="lazy" src="https://docs.uopensail.com/static/images/AB-testing-Rec.jpg" width="522" class="img_ev3q">
+</center>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-正交层的概念及意义">4. 正交层的概念及意义<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#4-%E6%AD%A3%E4%BA%A4%E5%B1%82%E7%9A%84%E6%A6%82%E5%BF%B5%E5%8F%8A%E6%84%8F%E4%B9%89" class="hash-link" aria-label="Direct link to 4. 正交层的概念及意义" title="Direct link to 4. 正交层的概念及意义">​</a></h2>
+<p><strong>正交层</strong>指的是在AB测试中相互独立、互不干扰的实验设计层。正交层的核心思想是通过独立分流和隔离数据，让多个实验可以同时运行。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="正交层的技术实现">正交层的技术实现：<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#%E6%AD%A3%E4%BA%A4%E5%B1%82%E7%9A%84%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0" class="hash-link" aria-label="Direct link to 正交层的技术实现：" title="Direct link to 正交层的技术实现：">​</a></h3>
+<ol>
+<li><strong>分流逻辑独立</strong>：每个正交层拥有各自的分流规则，用户在不同层的分组互不干扰。</li>
+<li><strong>数据隔离</strong>：每个正交层的实验数据独立存储和分析，避免混淆。</li>
+<li><strong>层优先级</strong>：通过明确优先级解决多个正交层在边界条件下的冲突问题。</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="正交层的优势">正交层的优势：<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#%E6%AD%A3%E4%BA%A4%E5%B1%82%E7%9A%84%E4%BC%98%E5%8A%BF" class="hash-link" aria-label="Direct link to 正交层的优势：" title="Direct link to 正交层的优势：">​</a></h3>
+<ul>
+<li><strong>多实验并行</strong>：支持多个实验同时运行，提高效率。</li>
+<li><strong>减少干扰</strong>：保证一个实验的改动不会影响其他实验的结果。</li>
+<li><strong>准确性</strong>：清晰评估每个实验变量的独立影响。</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-如何计算置信度">5. 如何计算置信度？<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#5-%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E7%BD%AE%E4%BF%A1%E5%BA%A6" class="hash-link" aria-label="Direct link to 5. 如何计算置信度？" title="Direct link to 5. 如何计算置信度？">​</a></h2>
+<center>
+<img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/p-0.05.png" alt="" data-align="center" width="522" class="img_ev3q">
+</center>
+<p>置信度是AB测试中评估实验结果显著性的关键指标，用于衡量结果的可靠性。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="核心计算方法">核心计算方法：<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#%E6%A0%B8%E5%BF%83%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95" class="hash-link" aria-label="Direct link to 核心计算方法：" title="Direct link to 核心计算方法：">​</a></h3>
+<ol>
+<li>
+<p><strong>假设检验</strong>：</p>
+<ul>
+<li>原假设（H0）：实验组与对照组的表现无显著差异。</li>
+<li>计算统计量（如t值或z值），并通过显著性水平（如0.05）判断是否拒绝原假设。</li>
+</ul>
+</li>
+<li>
+<p><strong>p值计算</strong>：</p>
+<ul>
+<li>p值表示实验结果或更极端结果在原假设下发生的概率。</li>
+<li>若p值小于显著性水平（如0.05），则认为实验结果具有统计显著性。</li>
+</ul>
+</li>
+<li>
+<p><strong>置信区间</strong>：</p>
+<ul>
+<li>通过计算实验组与对照组效果差异的置信区间，可以直观理解结果的可信范围。例如，若效果差异的置信区间为[2%, 5%]，则说明实验结果的提升范围在2%-5%之间。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-growthbook简介">6. <a href="https://www.growthbook.io/" target="_blank" rel="noopener noreferrer">GrowthBook简介</a><a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#6-growthbook%E7%AE%80%E4%BB%8B" class="hash-link" aria-label="Direct link to 6-growthbook简介" title="Direct link to 6-growthbook简介">​</a></h2>
+<p>GrowthBook是<a href="https://github.com/growthbook/growthbook.git" target="_blank" rel="noopener noreferrer">一款开源的AB测试</a>和功能管理平台，专为快速构建和运行实验而设计。它以轻量级、灵活性和易集成性著称，适合各种规模和复杂度的团队。</p>
+<center>
+<img decoding="async" loading="lazy" src="https://docs.uopensail.com/static/images/growthbook.png" width="522" class="img_ev3q">
+</center>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="核心特点">核心特点：<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#%E6%A0%B8%E5%BF%83%E7%89%B9%E7%82%B9" class="hash-link" aria-label="Direct link to 核心特点：" title="Direct link to 核心特点：">​</a></h3>
+<ol>
+<li><strong>去中心化分流</strong>：
+<ul>
+<li>实验逻辑下载到客户端或服务端本地完成，无需依赖分流服务。参加该网页：<a href="https://docs.growthbook.io/self-host/cdn" target="_blank" rel="noopener noreferrer">Growthbook Using a CDN</a></li>
+</ul>
+</li>
+<li><strong>动态实验配置</strong>：
+<ul>
+<li>支持实时更新实验规则和分流比例。</li>
+</ul>
+</li>
+<li><strong>多语言支持</strong>：
+<ul>
+<li>兼容多种语言（如Python、JavaScript、go）和框架，方便集成到现有系统。</li>
+</ul>
+</li>
+<li><strong>数据无缝对接</strong>：
+<ul>
+<li>可与主流数据分析工具（如Google Analytics）集成。</li>
+</ul>
+</li>
+<li><strong>开源社区</strong>：
+<ul>
+<li>拥有活跃的开发者社区，持续迭代和优化。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-growthbook的分流机制">7. GrowthBook的分流机制<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#7-growthbook%E7%9A%84%E5%88%86%E6%B5%81%E6%9C%BA%E5%88%B6" class="hash-link" aria-label="Direct link to 7. GrowthBook的分流机制" title="Direct link to 7. GrowthBook的分流机制">​</a></h2>
+<p>GrowthBook采用去中心化的分流机制，其核心流程：</p>
+<ol>
+<li><strong>配置管理</strong>：
+<ul>
+<li>实验规则存储在服务器，客户端定期拉取更新。</li>
+</ul>
+</li>
+<li><strong>本地分流</strong>：
+<ul>
+<li>分流逻辑嵌入到客户端代码，用户分流完全在本地完成。</li>
+</ul>
+</li>
+<li><strong>持久化分组</strong>：
+<ul>
+<li>通过本地存储或后端记录，确保用户分组的一致性。</li>
+</ul>
+</li>
+</ol>
+<p>这种设计减少了对分流服务的依赖，提升了性能和稳定性。</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-为什么选择growthbook">8. 为什么选择GrowthBook？<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#8-%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9growthbook" class="hash-link" aria-label="Direct link to 8. 为什么选择GrowthBook？" title="Direct link to 8. 为什么选择GrowthBook？">​</a></h2>
+<p>GrowthBook的优势包括：</p>
+<ol>
+<li><strong>技术先进</strong>：去中心化分流机制简化了架构，提高了效率。</li>
+<li><strong>灵活性高</strong>：支持动态配置和多种语言集成。</li>
+<li><strong>开源特性</strong>：降低了使用成本，同时便于扩展。</li>
+<li><strong>社区支持</strong>：活跃的开发者社区提供持续更新和强大支持。</li>
+</ol>
+<p>我们专注于推荐系统和推荐算法的优化，这是我们的核心竞争力。对于AB测试等非核心功能，我们选择使用行业领先的工具（如GrowthBook），这样既能专注于擅长的领域，又能借助专业工具实现最佳实践。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="深入阅读">深入阅读<a href="https://docs.uopensail.com/blog/%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90AB%E6%B5%8B%E8%AF%95%EF%BC%9A%E4%BB%8E%E5%88%86%E6%B5%81%E5%8E%9F%E7%90%86%E5%88%B0GrowthBook%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5#%E6%B7%B1%E5%85%A5%E9%98%85%E8%AF%BB" class="hash-link" aria-label="Direct link to 深入阅读" title="Direct link to 深入阅读">​</a></h2>
+<ul>
+<li>
+<p><a href="https://tech.meituan.com/2023/08/24/ab-test-practice-in-meituan.html" target="_blank" rel="noopener noreferrer">如何提供一个可信的AB测试解决方案 - 美团技术团队</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/A/B_testing" target="_blank" rel="noopener noreferrer">A/B testing - Wikipedia</a></p>
+</li>
+<li>
+<p><a href="https://docs.growthbook.io/" target="_blank" rel="noopener noreferrer">GrowthBook Docs</a></p>
+</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Application of DeepFM Model in AppS]]></title>
             <link>https://docs.uopensail.com/blog/AppS/DeepFM</link>
             <guid>https://docs.uopensail.com/blog/AppS/DeepFM</guid>
-            <pubDate>Tue, 08 Apr 2025 00:25:47 GMT</pubDate>
+            <pubDate>Thu, 10 Apr 2025 00:17:00 GMT</pubDate>
             <description><![CDATA[In the field of recommendation systems, efficiently combining low-order and high-order feature interactions to improve prediction accuracy has always been a key challenge. The DeepFM model offers a solution that combines memory capacity and generalization ability by integrating Factorization Machines (FM) with Deep Neural Networks (DNN). This article will introduce the application and effectiveness of DeepFM in the AppS business.]]></description>
             <content:encoded><![CDATA[<p>In the field of recommendation systems, efficiently combining low-order and high-order feature interactions to improve prediction accuracy has always been a key challenge. The DeepFM model offers a solution that combines memory capacity and generalization ability by integrating Factorization Machines (FM) with Deep Neural Networks (DNN). This article will introduce the application and effectiveness of DeepFM in the AppS business.</p>
 <center>
@@ -457,7 +849,7 @@ Monitor real-time performance of multi-strategy systems, enabling rapid adjustme
             <title><![CDATA[Application of the ESMM Model in AppS]]></title>
             <link>https://docs.uopensail.com/blog/AppS/ESMM</link>
             <guid>https://docs.uopensail.com/blog/AppS/ESMM</guid>
-            <pubDate>Tue, 08 Apr 2025 00:25:47 GMT</pubDate>
+            <pubDate>Thu, 10 Apr 2025 00:17:00 GMT</pubDate>
             <description><![CDATA[In modern recommendation systems, particularly within the AppS business environment, predicting user behaviors such as Click-Through Rate (CTR) and Conversion Rate (CVR) is crucial for enhancing user satisfaction and driving business growth. The ESMM model, with its unique architecture and efficient multi-task learning capability, offers an outstanding solution for the AppS business.]]></description>
             <content:encoded><![CDATA[<p>In modern recommendation systems, particularly within the AppS business environment, predicting user behaviors such as Click-Through Rate (CTR) and Conversion Rate (CVR) is crucial for enhancing user satisfaction and driving business growth. The ESMM model, with its unique architecture and efficient multi-task learning capability, offers an outstanding solution for the AppS business.</p>
 <center>
@@ -527,7 +919,7 @@ Monitor real-time performance of multi-strategy systems, enabling rapid adjustme
             <title><![CDATA[Application of FM Model in AppS]]></title>
             <link>https://docs.uopensail.com/blog/AppS/FM</link>
             <guid>https://docs.uopensail.com/blog/AppS/FM</guid>
-            <pubDate>Tue, 08 Apr 2025 00:25:47 GMT</pubDate>
+            <pubDate>Thu, 10 Apr 2025 00:17:00 GMT</pubDate>
             <description><![CDATA[Introduction]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://docs.uopensail.com/blog/AppS/FM#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction">​</a></h2>
 <p>Factorization Machines (FM) are powerful machine learning models, especially widely used in recommendation systems and advertising click-through rate prediction. FM models can effectively capture the cross information between features and are highly efficient and easy to implement in engineering.</p>
@@ -586,7 +978,7 @@ Monitor real-time performance of multi-strategy systems, enabling rapid adjustme
             <title><![CDATA[Application of the MMOE Model in AppS]]></title>
             <link>https://docs.uopensail.com/blog/AppS/MMOE</link>
             <guid>https://docs.uopensail.com/blog/AppS/MMOE</guid>
-            <pubDate>Tue, 08 Apr 2025 00:25:47 GMT</pubDate>
+            <pubDate>Thu, 10 Apr 2025 00:17:00 GMT</pubDate>
             <description><![CDATA[In the AppS business, recommendation systems need not only to improve user Click-Through Rate (CTR) but also to enhance Conversion Rate (CVR) to achieve comprehensive user engagement and business growth. The Multi-gate Mixture-of-Experts (MMOE) model offers an efficient solution by simultaneously optimizing multiple objectives to meet these business needs.]]></description>
             <content:encoded><![CDATA[<p>In the AppS business, recommendation systems need not only to improve user Click-Through Rate (CTR) but also to enhance Conversion Rate (CVR) to achieve comprehensive user engagement and business growth. The Multi-gate Mixture-of-Experts (MMOE) model offers an efficient solution by simultaneously optimizing multiple objectives to meet these business needs.</p>
 <center>
@@ -665,7 +1057,7 @@ Multi-gate Mixture-of-Experts</a></p>
             <title><![CDATA[Applicaton Store(AppS) Introduction]]></title>
             <link>https://docs.uopensail.com/blog/AppS/intro</link>
             <guid>https://docs.uopensail.com/blog/AppS/intro</guid>
-            <pubDate>Tue, 08 Apr 2025 00:25:47 GMT</pubDate>
+            <pubDate>Thu, 10 Apr 2025 00:17:00 GMT</pubDate>
             <description><![CDATA[Apps functions as a digital distribution platform similar to Apple's AppStore or Google Play, focusing on providing users with a variety of applications and games. Our primary key performance indicator is the number of user downloads and installations, which directly reflects the platform's usage and user satisfaction.]]></description>
             <content:encoded><![CDATA[<p>Apps functions as a digital distribution platform similar to Apple's AppStore or Google Play, focusing on providing users with a variety of applications and games. Our primary key performance indicator is the number of user downloads and installations, which directly reflects the platform's usage and user satisfaction.</p>
 <img decoding="async" loading="lazy" title="" src="https://docs.uopensail.com/static/images/appstore.jpg" alt="" width="476" data-align="center" class="img_ev3q">
